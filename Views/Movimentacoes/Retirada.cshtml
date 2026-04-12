@@ -1,0 +1,34 @@
+@model StartStop.Models.Movimentacao
+
+<h2>Nova Retirada</h2>
+
+<!-- Exibe mensagens de erro -->
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<form asp-action="Retirada" method="post">
+    <div class="form-group">
+        <label>Motorista</label>
+        <select asp-for="MotoristaId" asp-items="ViewBag.Motoristas" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Veículo</label>
+        <select asp-for="VeiculoId" asp-items="ViewBag.Veiculos" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Destino</label>
+        <input asp-for="Destino" class="form-control" />
+        <span asp-validation-for="Destino" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Km Saída</label>
+        <input asp-for="KmSaida" class="form-control" />
+        <span asp-validation-for="KmSaida" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Confirmar Retirada</button>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</form>
+

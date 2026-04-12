@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = oldStartStop
+build_property.RootNamespace = oldStartStop
+build_property.ProjectDir = C:\startstop\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\startstop
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/startstop/oldViews/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/oldViews/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/oldViews/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/oldViews/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/oldViews/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/oldViews/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Movimentacoes/Cancelar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXE1vdmltZW50YWNvZXNcQ2FuY2VsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Movimentacoes/Devolucao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXE1vdmltZW50YWNvZXNcRGV2b2x1Y2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Movimentacoes/Retirada.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXE1vdmltZW50YWNvZXNcUmV0aXJhZGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/StartStop/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/startstop/oldViews/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = b2xkVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9ljdwoeoce
+
+[C:/startstop/StartStop/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3RhcnRTdG9wXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-e51y8qmas0

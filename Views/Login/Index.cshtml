@@ -1,0 +1,47 @@
+@model StartStop.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm mt-5">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Acesso ao Sistema</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Index" method="post">
+                    <div class="form-group mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" placeholder="Digite seu email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Senha" class="form-label"></label>
+                        <input asp-for="Senha" type="password" class="form-control" placeholder="Digite sua senha" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                </form>
+                
+
+<div class="form-group text-center mt-3">
+    <a asp-action="EsqueciSenha" asp-controller="Login" class="btn btn-link">
+        Esqueci minha senha ou Quero Redefinir
+    </a>
+</div>
+
+            </div>
+            <div class="card-footer text-center">
+                <small class="text-muted">Digite suas credenciais para acessar o sistema.</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

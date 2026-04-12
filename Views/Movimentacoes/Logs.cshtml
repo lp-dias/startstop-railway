@@ -1,0 +1,70 @@
+@model IEnumerable<StartStop.Models.Log>
+
+<div class="container mt-4">
+    <h4>Histórico de Logs</h4>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Motorista</th>
+                <th>Veículo</th>
+                <th>Tipo</th>
+                <th>Status</th>
+                <th>Motivo</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <!-- Ajuste: se não existe log.Data, use DataRetirada -->
+                <td>@log.Movimentacao?.DataRetirada</td>
+                <td>@log.Movimentacao?.Motorista?.Nome</td>
+                <td>@log.Movimentacao?.Veiculo?.Placa</td>
+                <td>@log.Movimentacao?.TipoMovimentacao</td>
+                <td>
+                    @if (log.Movimentacao?.Status == "Pendente")
+                    {
+                        <span class="badge bg-warning">Pendente</span>
+                    }
+                    else if (log.Movimentacao?.Status == "Finalizado")
+                    {
+                        <span class="badge bg-success">Finalizado</span>
+                    }
+                    else if (log.Movimentacao?.Status == "Cancelado")
+                    {
+                        <span class="badge bg-danger">Cancelado</span>
+                    }
+                    else if (log.Movimentacao?.Status == "KmTolerancia")
+                    {
+                        <span class="badge bg-info">Km Tolerância</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">@log.Movimentacao?.Status</span>
+                    }
+                </td>
+                <td>@log.Motivo</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<!-- Toasts para feedback -->
+@if (TempData["Mensagem"] != null)
+{
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast show bg-primary text-white" role="alert">
+            <div class="toast-header bg-dark text-white">
+                <strong class="me-auto">Sistema</strong>
+                <small>Agora</small>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                @TempData["Mensagem"]
+            </div>
+        </div>
+    </div>
+}

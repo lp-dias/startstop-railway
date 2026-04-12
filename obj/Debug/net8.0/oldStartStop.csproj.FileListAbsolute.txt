@@ -1,0 +1,9 @@
+C:\startstop\obj\Debug\net8.0\oldStartStop.csproj.AssemblyReference.cache
+C:\startstop\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\startstop\obj\Debug\net8.0\oldStartStop.GeneratedMSBuildEditorConfig.editorconfig
+C:\startstop\obj\Debug\net8.0\oldStartStop.AssemblyInfoInputs.cache
+C:\startstop\obj\Debug\net8.0\oldStartStop.AssemblyInfo.cs
+C:\startstop\obj\Debug\net8.0\oldStartStop.csproj.CoreCompileInputs.cache
+C:\startstop\obj\Debug\net8.0\oldStartStop.MvcApplicationPartsAssemblyInfo.cache
+C:\startstop\obj\Debug\net8.0\oldStartStop.RazorAssemblyInfo.cache
+C:\startstop\obj\Debug\net8.0\oldStartStop.RazorAssemblyInfo.cs

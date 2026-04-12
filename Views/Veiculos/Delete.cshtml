@@ -1,0 +1,45 @@
+@model StartStop.Models.Veiculo
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Excluir Veículo";
+}
+
+<h2>Excluir Veículo</h2>
+
+<h4>Você tem certeza que deseja excluir este veículo?</h4>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">Placa</dt>
+    <dd class="col-sm-10">@Model.Placa</dd>
+
+    <dt class="col-sm-2">Status</dt>
+    <dd class="col-sm-10">@Model.Status</dd>
+
+    <dt class="col-sm-2">Km Acumulado</dt>
+    <dd class="col-sm-10">@Model.KmAcumulado</dd>
+
+    <dt class="col-sm-2">Bloqueado</dt>
+    <dd class="col-sm-10">@(Model.Bloqueado ? "Sim" : "Não")</dd>
+
+    <dt class="col-sm-2">Data Início</dt>
+    <dd class="col-sm-10">@(Model.DataInicio?.ToString("dd/MM/yyyy HH:mm") ?? "-")</dd>
+
+    <dt class="col-sm-2">Data Fim</dt>
+    <dd class="col-sm-10">@(Model.DataFim?.ToString("dd/MM/yyyy HH:mm") ?? "-")</dd>
+
+    <dt class="col-sm-2">Oficina</dt>
+    <dd class="col-sm-10">@(string.IsNullOrEmpty(Model.Oficina) ? "-" : Model.Oficina)</dd>
+</dl>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">
+        <i class="bi bi-trash"></i> Confirmar Exclusão
+    </button>
+    <a asp-action="Index" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Cancelar
+    </a>
+</form>
+

@@ -1,0 +1,37 @@
+@model StartStop.Models.Motorista
+
+<h2>Excluir Motorista</h2>
+
+<h4>Você tem certeza que deseja excluir este motorista?</h4>
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">Usuário</dt>
+    <dd class="col-sm-10">@Model.Usuario?.Nome</dd>
+
+    <dt class="col-sm-2">Nome</dt>
+    <dd class="col-sm-10">@Model.Nome</dd>
+
+    <dt class="col-sm-2">Status</dt>
+    <dd class="col-sm-10">@Model.Status</dd>
+
+    <dt class="col-sm-2">Área</dt>
+    <dd class="col-sm-10">@Model.Area</dd>
+
+    <dt class="col-sm-2">Email</dt>
+    <dd class="col-sm-10">@Model.Email</dd>
+
+    <dt class="col-sm-2">Telefone</dt>
+    <dd class="col-sm-10">@Model.Telefone</dd>
+
+    <dt class="col-sm-2">Ativo</dt>
+    <dd class="col-sm-10">@(Model.Ativo ? "Sim" : "Não")</dd>
+
+    <dt class="col-sm-2">Empregado</dt>
+    <dd class="col-sm-10">@(Model.Empregado ? "Sim" : "Não")</dd>
+</dl>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</form>

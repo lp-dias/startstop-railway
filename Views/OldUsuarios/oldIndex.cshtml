@@ -1,0 +1,37 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Lista de Usuários";
+}
+
+@model IEnumerable<StartStop.Models.Usuario>
+
+<h2>Lista de Usuários</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Cadastrar Usuário</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Perfil</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var u in Model)
+    {
+        <tr>
+            <td>@u.Nome</td>
+            <td>@u.Email</td>
+            <td>@u.Perfil</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@u.Id" class="btn btn-warning btn-sm">Editar</a>
+                <a asp-action="Delete" asp-route-id="@u.Id" class="btn btn-danger btn-sm">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

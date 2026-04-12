@@ -1,0 +1,70 @@
+@model StartStop.Models.Movimentacao
+
+<div class="card">
+    <div class="card-header">
+        <h4>Detalhes da Movimentação</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Motorista</dt>
+            <dd class="col-sm-9">@Model.Motorista?.Nome</dd>
+
+            <dt class="col-sm-3">Veículo</dt>
+            <dd class="col-sm-9">@Model.Veiculo?.Placa</dd>
+
+            <dt class="col-sm-3">Destino</dt>
+            <dd class="col-sm-9">@Model.Destino</dd>
+
+            <dt class="col-sm-3">Data Retirada</dt>
+            <dd class="col-sm-9">@Model.DataRetirada</dd>
+
+            <dt class="col-sm-3">Data Retorno</dt>
+            <dd class="col-sm-9">@Model.DataRetorno</dd>
+
+            <dt class="col-sm-3">Tipo</dt>
+            <dd class="col-sm-9">@Model.TipoMovimentacao</dd>
+
+            <dt class="col-sm-3">Status</dt>
+            <dd class="col-sm-9">
+                @if (Model.Status == "Pendente")
+                {
+                    <span class="badge bg-warning">Pendente</span>
+                }
+                else if (Model.Status == "Finalizado")
+                {
+                    <span class="badge bg-success">Finalizado</span>
+                }
+                else if (Model.Status == "Cancelado")
+                {
+                    <span class="badge bg-danger">Cancelado</span>
+                }
+                else if (Model.Status == "KmTolerancia")
+                {
+                    <span class="badge bg-info">Km Tolerância</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">@Model.Status</span>
+                }
+            </dd>
+
+            <dt class="col-sm-3">Km Saída</dt>
+            <dd class="col-sm-9">@Model.KmSaida</dd>
+
+            <dt class="col-sm-3">Km Retorno</dt>
+            <dd class="col-sm-9">@Model.KmRetorno</dd>
+
+            <dt class="col-sm-3">Km Percorrido</dt>
+            <dd class="col-sm-9">@Model.KmPercorrido</dd>
+
+            <dt class="col-sm-3">Tempo de Posse (min)</dt>
+            <dd class="col-sm-9">@Model.TempoPosse</dd>
+
+            <dt class="col-sm-3">Motivo Cancelamento</dt>
+            <dd class="col-sm-9">@Model.MotivoCancelamento</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+@model StartStop.Models.Movimentacao
+
+<div class="container mt-4">
+    <h2 class="mb-4">🚗 Nova Retirada</h2>
+
+    <!-- Mensagem de erro -->
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show shadow-lg" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            @TempData["MensagemErro"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+        </div>
+    }
+
+    <!-- Mensagem de sucesso -->
+    @if (TempData["Mensagem"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show shadow-lg" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            @TempData["Mensagem"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+        </div>
+    }
+
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <form asp-action="CreateRetirada" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="veiculoId" class="form-label">Veículo</label>
+                    <select id="veiculoId" name="veiculoId" class="form-select" asp-items="ViewBag.VeiculosDisponiveis" required>
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="destino" class="form-label">Destino</label>
+                    <input type="text" id="destino" name="destino" class="form-control" placeholder="Informe o destino" required />
+                </div>
+
+                <div class="col-md-6">
+                    <label for="kmSaida" class="form-label">Km Saída</label>
+                    <input type="number" id="kmSaida" name="kmSaida" class="form-control" placeholder="Informe o Km de saída" required />
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-lg me-1"></i> Confirmar Retirada
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left me-1"></i> Voltar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

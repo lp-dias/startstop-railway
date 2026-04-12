@@ -1,0 +1,45 @@
+@model IEnumerable<StartStop.Models.Manutencao>
+
+@{
+    ViewData["Title"] = "Lista de Manutenções";
+}
+
+<h2>Lista de Manutenções</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Nova Manutenção
+    </a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Veículo</th>
+            <th>Tipo</th>
+            <th>Data Início</th>
+            <th>Data Fim</th>
+            <th>Custo</th>
+            <th>Observações</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@m.VeiculoId</td>
+            <td>@m.Tipo</td>
+            <td>@m.DataInicio</td>
+            <td>@m.DataFim</td>
+            <td>@m.Custo</td>
+            <td>@m.Observacoes</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@m.Id" class="btn btn-info btn-sm">Detalhes</a>
+                <a asp-action="Edit" asp-route-id="@m.Id" class="btn btn-warning btn-sm">Editar</a>
+                <a asp-action="Delete" asp-route-id="@m.Id" class="btn btn-danger btn-sm">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

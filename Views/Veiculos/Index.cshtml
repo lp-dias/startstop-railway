@@ -1,0 +1,76 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Lista de Veículos";
+}
+
+
+@model IEnumerable<StartStop.Models.Veiculo>
+
+<h2>Lista de Veículos</h2>
+
+<p>
+    @if (User.IsInRole("Administrador") || User.IsInRole("Tecnico"))
+    {
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Cadastrar Veículo
+        </a>
+    }
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Placa</th>
+            <th>Status</th>
+            <th>Kilometragem</th>
+            <th>Bloqueado</th>
+            <th>Data Início</th>
+            <th>Data Fim</th>
+            <th>Oficina</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var v in Model)
+    {
+        <tr>
+            <td>@v.Placa</td>
+            <td>@v.Status</td>
+            <td>@v.KmAcumulado</td>
+            <td>@(v.Bloqueado ? "Sim" : "Não")</td>
+            <td>@(v.DataInicio?.ToString("dd/MM/yyyy HH:mm") ?? "-")</td>
+            <td>@(v.DataFim?.ToString("dd/MM/yyyy HH:mm") ?? "-")</td>
+            <td>@(string.IsNullOrEmpty(v.Oficina) ? "-" : v.Oficina)</td>
+            <td>
+                <!-- Botão Detalhes visível para todos -->
+                <a asp-action="Details" asp-route-id="@v.Id" class="btn btn-info btn-sm">
+                    <i class="bi bi-eye"></i> Detalhes
+                </a>
+
+                <!-- Botão Bloquear/Desbloquear para Técnico e Administrador -->
+                @if (User.IsInRole("Administrador") || User.IsInRole("Tecnico"))
+                {
+                    <form asp-action="ToggleBloqueio" method="post" style="display:inline">
+                        <input type="hidden" name="id" value="@v.Id" />
+                        <button type="submit" class="btn @(v.Bloqueado ? "btn-success" : "btn-danger") btn-sm">
+                            @(v.Bloqueado ? "Desbloquear" : "Bloquear")
+                        </button>
+                    </form>
+                }
+
+                <!-- Apenas Administrador pode editar/excluir -->
+                @if (User.IsInRole("Administrador"))
+                {
+                    <a asp-action="Edit" asp-route-id="@v.Id" class="btn btn-warning btn-sm">
+                        <i class="bi bi-pencil-square"></i> Editar
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@v.Id" class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i> Excluir
+                    </a>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

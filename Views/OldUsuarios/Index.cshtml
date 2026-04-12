@@ -1,0 +1,27 @@
+@model IEnumerable<StartStop.Models.Usuario>
+
+<h2>Lista de Usuários</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Perfil</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var usuario in Model)
+    {
+        <tr>
+            <td>@usuario.Id</td>
+            <td>@usuario.Nome</td>
+            <td>@usuario.Email</td>
+            <td>@usuario.Perfil</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Novo Usuário</a>

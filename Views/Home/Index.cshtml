@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Painel Inicial";
+}
+
+<div class="row g-4">
+
+    <!-- Administrador -->
+    @if (User.IsInRole("Administrador"))
+    {
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-people-fill display-4 text-primary"></i>
+                    <h5 class="card-title mt-3">Gestão de Usuários</h5>
+                    <p class="card-text">Gerencie cadastros de usuários e perfis.</p>
+                    <a asp-controller="Usuarios" asp-action="Index" class="btn btn-primary">Acessar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-car-front-fill display-4 text-success"></i>
+                    <h5 class="card-title mt-3">Veículos</h5>
+                    <p class="card-text">Controle completo de veículos e manutenção.</p>
+                    <a asp-controller="Veiculos" asp-action="Index" class="btn btn-success">Acessar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-truck display-4 text-warning"></i>
+                    <h5 class="card-title mt-3">Movimentações</h5>
+                    <p class="card-text">Gerencie deslocamentos e operações.</p>
+                    <a asp-controller="Movimentacoes" asp-action="Index" class="btn btn-warning">Acessar</a>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Motorista e PCO -->
+    @if (User.IsInRole("Motorista") || User.IsInRole("PCO"))
+    {
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-truck display-4 text-warning"></i>
+                    <h5 class="card-title mt-3">Movimentações</h5>
+                    <p class="card-text">Registre e acompanhe suas movimentações.</p>
+                    <a asp-controller="Movimentacoes" asp-action="Index" class="btn btn-warning">Acessar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 offset-md-3 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-speedometer2 display-4 text-info"></i>
+                    <h5 class="card-title mt-3">Dashboard</h5>
+                    <p class="card-text">Acompanhe reservas, cancelamentos e encerramentos.</p>
+                    <a asp-controller="Dashboard" asp-action="Index" class="btn btn-info">Acessar</a>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Técnico -->
+    @if (User.IsInRole("Tecnico"))
+    {
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-car-front-fill display-4 text-success"></i>
+                    <h5 class="card-title mt-3">Veículos</h5>
+                    <p class="card-text">Cadastrar novos veículos e visualizar lista completa. Sem edição ou exclusão.</p>
+                    <a asp-controller="Veiculos" asp-action="Index" class="btn btn-success">Acessar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 offset-md-3 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-tools display-4 text-primary"></i>
+                    <h5 class="card-title mt-3">Manutenções</h5>
+                    <p class="card-text">Acesso completo: cadastrar, editar, excluir e visualizar manutenções.</p>
+                    <a asp-controller="Manutencao" asp-action="Index" class="btn btn-primary">Acessar</a>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

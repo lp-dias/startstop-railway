@@ -1,0 +1,197 @@
+@model IEnumerable<StartStop.ViewModels.VeiculoDashboardViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-4">📊 Dashboard de Veículos</h2>
+
+    <!-- Resumo estatístico -->
+    <div class="row mb-4 text-center">
+        <div class="col-md-3">
+            <div class="card bg-secondary text-white shadow-sm h-100">
+                <div class="card-body p-2">
+                    <i class="bi bi-car-front-fill fs-2"></i>
+                    <h6>Total</h6>
+                    <h5>@ViewBag.Total</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white shadow-sm h-100">
+                <div class="card-body p-2">
+                    <i class="bi bi-check-circle-fill fs-2"></i>
+                    <h6>Disponíveis</h6>
+                    <h5>@ViewBag.Disponiveis</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-dark shadow-sm h-100">
+                <div class="card-body p-2">
+                    <i class="bi bi-exclamation-triangle-fill fs-2"></i>
+                    <h6>Indisponíveis</h6>
+                    <h5>@ViewBag.Indisponiveis</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white shadow-sm h-100">
+                <div class="card-body p-2">
+                    <i class="bi bi-x-octagon-fill fs-2"></i>
+                    <h6>Bloqueados</h6>
+                    <h5>@ViewBag.Bloqueados</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloco de Reservas -->
+    <h4 class="mt-4">📌 Veículos Reservados</h4>
+    <div class="row">
+        @foreach (var v in Model.Where(x => x.ReservaId != null))
+        {
+            <div class="col-md-3 mb-3">
+                <div class="card border-primary shadow-sm h-100">
+                    <div class="card-header bg-primary text-white p-2">
+                        <h6 class="mb-0"><i class="bi bi-calendar-event me-1"></i> @v.Placa</h6>
+                    </div>
+                    <div class="card-body p-2">
+                        <small><strong>Reservado por:</strong> @v.UsuarioNome</small><br />
+                        @if (v.DataInicio.HasValue && v.DataFim.HasValue)
+                        {
+                            <small><strong>Período:</strong> @v.DataInicio?.ToString("dd/MM HH:mm") - @v.DataFim?.ToString("dd/MM HH:mm")</small>
+                        }
+
+                        @if (User.IsInRole("Administrador") || User.IsInRole("PCO"))
+                        {
+                            <form asp-controller="Reserva" asp-action="Finalizar" method="post" class="mt-1">
+                                <input type="hidden" name="id" value="@v.ReservaId" />
+                                <button type="submit" class="btn btn-danger btn-sm w-100">Encerrar</button>
+                            </form>
+
+                            <form asp-controller="Reserva" asp-action="Cancelar" method="post" class="mt-1">
+                                <input type="hidden" name="id" value="@v.ReservaId" />
+                                <button type="submit" class="btn btn-warning btn-sm w-100">Cancelar</button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Bloco de Retiradas -->
+    <h4 class="mt-4">🚚 Veículos Retirados</h4>
+    <div class="row">
+        @foreach (var v in Model.Where(x => x.MovimentacaoId != null))
+        {
+            <div class="col-md-3 mb-3">
+                <div class="card border-warning shadow-sm h-100">
+                    <div class="card-header bg-warning text-dark p-2">
+                        <h6 class="mb-0"><i class="bi bi-box-arrow-up-right me-1"></i> @v.Placa</h6>
+                    </div>
+                    <div class="card-body p-2">
+                        <small><strong>Motorista:</strong> @v.Motorista</small><br />
+                        <small><strong>Destino:</strong> @v.Destino</small><br />
+                        @if (v.DataRetirada != null)
+                        {
+                            <small><strong>Retirada:</strong> @v.DataRetirada?.ToString("dd/MM HH:mm")</small>
+                        }
+
+                        @if ((User.IsInRole("Administrador") || User.IsInRole("PCO")) && v.ReservaId == null)
+                        {
+                            <button class="btn btn-primary btn-sm mt-1 w-100" data-bs-toggle="modal" data-bs-target="#reservaModalInd-@v.Id">
+                                Reservar
+                            </button>
+                        }
+
+                        @if (User.IsInRole("Tecnico") || User.IsInRole("Motorista"))
+                        {
+                            <form asp-controller="Movimentacoes" asp-action="Devolver" method="post" class="mt-1">
+                                <input type="hidden" name="MovimentacaoId" value="@v.MovimentacaoId" />
+                                <button type="submit" class="btn btn-danger btn-sm w-100">Devolver</button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de reserva -->
+            @if (User.IsInRole("Administrador") || User.IsInRole("PCO"))
+            {
+                <div class="modal fade" id="reservaModalInd-@v.Id" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <form asp-controller="Reserva" asp-action="Reservar" method="post">
+                        <input type="hidden" name="VeiculoId" value="@v.Id" />
+                        <div class="modal-header">
+                          <h6 class="modal-title">Reservar @v.Placa</h6>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          <label>Início</label>
+                          <input type="datetime-local" name="DataInicio" class="form-control form-control-sm" required />
+                          <label class="mt-2">Fim</label>
+                          <input type="datetime-local" name="DataFim" class="form-control form-control-sm" required />
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn btn-success btn-sm w-100">Confirmar</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            }
+        }
+    </div>
+
+    <!-- Bloco de Disponíveis -->
+<h4 class="mt-4">✅ Veículos Disponíveis</h4>
+<div class="row">
+    @foreach (var v in Model.Where(x => x.Status == "Disponível"))
+    {
+        <div class="col-md-3 mb-3">
+            <div class="card border-success shadow-sm h-100">
+                <div class="card-header bg-success text-white p-2">
+                    <h6 class="mb-0"><i class="bi bi-car-front-fill me-1"></i> @v.Placa</h6>
+                </div>
+                <div class="card-body p-2">
+                    @if (User.IsInRole("Administrador") || User.IsInRole("PCO"))
+                    {
+                        <button class="btn btn-outline-primary btn-sm mt-1 w-100" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#reservaModal-@v.Id">
+                            Reservar
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de reserva -->
+        @if (User.IsInRole("Administrador") || User.IsInRole("PCO"))
+        {
+            <div class="modal fade" id="reservaModal-@v.Id" tabindex="-1" aria-labelledby="reservaModalLabel-@v.Id" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form asp-controller="Reserva" asp-action="Reservar" method="post">
+                            <input type="hidden" name="VeiculoId" value="@v.Id" />
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="reservaModalLabel-@v.Id">Reservar @v.Placa</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="DataInicio-@v.Id">Início</label>
+                                <input type="datetime-local" id="DataInicio-@v.Id" name="DataInicio" class="form-control form-control-sm" required />
+
+                                <label for="DataFim-@v.Id" class="mt-2">Fim</label>
+                                <input type="datetime-local" id="DataFim-@v.Id" name="DataFim" class="form-control form-control-sm" required />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success btn-sm w-100">Confirmar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    } <!-- fechamento correto do foreach -->
+</div>

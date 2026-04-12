@@ -1,0 +1,47 @@
+@model IEnumerable<StartStop.Models.Movimentacao>
+
+<div class="container mt-4">
+    <h2 class="mb-4">Relatório de Movimentações por Veículo (Placa)</h2>
+
+    <form method="get" class="row g-3 mb-4">
+        <div class="col-md-6">
+            <label for="placa" class="form-label">Informe a Placa</label>
+            <select id="placa" name="placa" class="form-select">
+                <option value="">Selecione...</option>
+                @foreach (var placa in ViewBag.Placas as List<string>)
+                {
+                    <option value="@placa">@placa</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-6 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </div>
+    </form>
+
+    <table class="table table-striped table-hover shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Data Retirada</th>
+                <th>Motorista</th>
+                <th>Destino</th>
+                <th>Km Saída</th>
+                <th>Km Retorno</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.DataRetirada</td>
+                    <td>@item.Motorista.Nome</td>
+                    <td>@item.Destino</td>
+                    <td>@item.KmSaida</td>
+                    <td>@item.KmRetorno</td>
+                    <td>@item.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
