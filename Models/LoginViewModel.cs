@@ -4,12 +4,14 @@ namespace StartStop.Models
 {
     public class LoginViewModel
     {
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "O campo Email é obrigatório.")]
+        [EmailAddress(ErrorMessage = "Digite um email válido.")]
+        [StringLength(150)]
+        public string Email { get; set; } = string.Empty;
 
-        [Required]
+        [Required(ErrorMessage = "O campo Senha é obrigatório.")]
         [DataType(DataType.Password)]
-        public string Senha { get; set; }
+        [StringLength(100, ErrorMessage = "A senha deve ter no máximo 100 caracteres.")]
+        public string Senha { get; set; } = string.Empty;
     }
 }

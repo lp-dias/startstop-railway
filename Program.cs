@@ -6,6 +6,8 @@ using StartStop.Services; // <- adiciona o namespace do EmailService
 using Serilog;
 
 
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuração do Serilog
@@ -18,9 +20,17 @@ builder.Host.UseSerilog();
 
 builder.Services.AddControllersWithViews();
 
-// Banco de dados
+// Banco de dados Mysql
 builder.Services.AddDbContext<StartStopContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 46)) // ajuste para sua versão
+    ));
+
+
+// Banco de dados sqlite
+//builder.Services.AddDbContext<StartStopContext>(options =>
+//    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Autenticação por cookie
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

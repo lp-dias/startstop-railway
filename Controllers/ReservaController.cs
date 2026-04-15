@@ -150,6 +150,23 @@ namespace StartStop.Controllers
             return RedirectToAction("Index", "Dashboard");
         }
 
+        // Listagem de reservas → apenas Administrador
+[HttpGet]
+[Authorize(Roles = "Administrador")]
+public async Task<IActionResult> Index()
+{
+    AtualizarReservasExpiradas();
+
+    var reservas = await _context.Reservas
+        .Include(r => r.Veiculo)
+        .Include(r => r.Usuario)
+        .OrderByDescending(r => r.DataInicio)
+        .ToListAsync();
+
+    return View(reservas);
+}
+
+
         // Cancelar reserva → apenas Administrador e PCO
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -177,7 +194,19 @@ namespace StartStop.Controllers
                         .OrderBy(r => r.DataInicio)
                         .FirstOrDefaultAsync();
 
-                    veiculo.Status = reservaFutura != null ? "Reservado" : "Disponível";
+                    if (reservaFutura != null)
+                    {
+                        veiculo.Status = "Reservado";
+                    }
+                    else
+                    {
+                        // 🔎 Verifica se há movimentação em andamento
+                        var movimentacaoAberta = await _context.Movimentacoes
+                            .AnyAsync(m => m.VeiculoId == veiculo.Id && m.Status == "Ativa");
+
+                        veiculo.Status = movimentacaoAberta ? "Indisponível" : "Disponível";
+                    }
+
                     _context.Veiculos.Update(veiculo);
                 }
 
@@ -189,6 +218,9 @@ namespace StartStop.Controllers
             }
 
             return RedirectToAction("Index", "Dashboard");
+            
+
+            
         }
     }
 }

@@ -1,0 +1,249 @@
+
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+
+    "MigrationId" VARCHAR(255) NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+
+    "ProductVersion" VARCHAR(255) NOT NULL
+
+);
+INSERT INTO __EFMigrationsHistory VALUES('20260409213326_InitialClean','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410025730_AjusteUsuario','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410130248_AddCamposExtrasUsuario','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410131941_AddCamposExtrasUsuario2','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410131959_CamposExtrasUsuarios','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410134807_ConvertPerfilToEnum','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410145119_PerfilEnumMigration','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410153929_PerfilEnumMigrationFinal','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410192037_AddBloqueioCamposToVeiculos','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410192754_AddCamposBloqueioVeiculos2','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410193414_AddCamposBloqueioVeiculos3','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260410194743_AddCamposBloqueioVeiculos','8.0.0');
+INSERT INTO __EFMigrationsHistory VALUES('20260411075728_CriarTabelaReservas','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260412150225_AddPerfilPCO','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260412180507_AddTokenExpiraToUsuario','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260412183900_AddTokenRecuperacaoToUsuario','8.0.5');
+INSERT INTO __EFMigrationsHistory VALUES('20260413194303_InitialMySql','8.0.5');
+CREATE TABLE IF NOT EXISTS "Motoristas" (
+
+    "Id" INT NOT NULL CONSTRAINT "PK_Motoristas" PRIMARY KEY AUTOINCREMENT,
+
+    "Nome" VARCHAR(255) NOT NULL,
+
+    "Status" VARCHAR(255) NOT NULL,
+
+    "Area" VARCHAR(255) NOT NULL,
+
+    "Email" VARCHAR(255) NOT NULL,
+
+    "Telefone" VARCHAR(255) NOT NULL,
+
+    "Ativo" INT NOT NULL,
+
+    "Empregado" INT NOT NULL,
+
+    "UsuarioId" INT NOT NULL,
+
+    CONSTRAINT "FK_Motoristas_Usuarios_UsuarioId" FOREIGN KEY ("UsuarioId") REFERENCES "Usuarios" ("Id") ON DELETE CASCADE
+
+);
+INSERT INTO Motoristas VALUES(2,'Leandro','Disponível','Admin','lpdias9@gmail.com','13974056644',1,1,6);
+INSERT INTO Motoristas VALUES(4,'Danilo','Disponível','planejador','danilo@startstop.com','1332132345',1,1,7);
+INSERT INTO Motoristas VALUES(5,'ANDRE','Disponível','Admin','lpdias9@gmail.com','13974056644',1,1,8);
+INSERT INTO Motoristas VALUES(6,'Silas','Disponível','Técnico','silas@startstop','13974056644',1,1,9);
+CREATE TABLE IF NOT EXISTS "Manutencoes" (
+
+    "Id" INT NOT NULL CONSTRAINT "PK_Manutencoes" PRIMARY KEY AUTOINCREMENT,
+
+    "VeiculoId" INT NOT NULL,
+
+    "Bloqueado" INT NOT NULL,
+
+    "DataInicio" VARCHAR(255) NULL,
+
+    "DataFim" VARCHAR(255) NULL,
+
+    "Tipo" VARCHAR(255) NOT NULL,
+
+    "Custo" DOUBLE NULL,
+
+    "Observacoes" VARCHAR(255) NOT NULL,
+
+    CONSTRAINT "FK_Manutencoes_Veiculos_VeiculoId" FOREIGN KEY ("VeiculoId") REFERENCES "Veiculos" ("Id") ON DELETE CASCADE
+
+);
+CREATE TABLE IF NOT EXISTS "Movimentacoes" (
+
+    "Id" INT NOT NULL CONSTRAINT "PK_Movimentacoes" PRIMARY KEY AUTOINCREMENT,
+
+    "MotoristaId" INT NOT NULL,
+
+    "VeiculoId" INT NOT NULL,
+
+    "DataRetirada" VARCHAR(255) NOT NULL,
+
+    "DataRetorno" VARCHAR(255) NULL,
+
+    "Destino" VARCHAR(255) NOT NULL,
+
+    "KmSaida" INT NOT NULL,
+
+    "KmRetorno" INT NULL,
+
+    "MotivoCancelamento" VARCHAR(255) NULL, TipoMovimentacao VARCHAR(255) NOT NULL DEFAULT 'Retirada', Status VARCHAR(255) NOT NULL DEFAULT 'Pendente', KmPercorrido INT NULL, TempoPosse INT NULL,
+
+    CONSTRAINT "FK_Movimentacoes_Motoristas_MotoristaId" FOREIGN KEY ("MotoristaId") REFERENCES "Motoristas" ("Id") ON DELETE CASCADE,
+
+    CONSTRAINT "FK_Movimentacoes_Veiculos_VeiculoId" FOREIGN KEY ("VeiculoId") REFERENCES "Veiculos" ("Id") ON DELETE CASCADE
+
+);
+INSERT INTO Movimentacoes VALUES(1,2,3,'2026-04-11 02:31:33.3878791','2026-04-11 02:41:10.0962953','ATACADAO',1000,1010,NULL,'Devolucao','Finalizado',10,9);
+INSERT INTO Movimentacoes VALUES(2,2,4,'2026-04-11 02:42:36.6065231','2026-04-11 02:44:20.5072474','teste para saida 2 x',1000,1010,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(3,2,3,'2026-04-11 02:42:52.6864793','2026-04-11 02:44:30.8522657','saida',1010,1020,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(4,2,3,'2026-04-11 02:45:40.3492602','2026-04-11 02:46:11.7518832','teste km',1022,1030,NULL,'Devolucao','Finalizado',8,0);
+INSERT INTO Movimentacoes VALUES(5,2,3,'2026-04-11 03:00:56.6512824','2026-04-11 03:01:53.1804818','TESTE 2 VEICULOS E MAIUSCULO',1030,1040,NULL,'Devolucao','Finalizado',10,0);
+INSERT INTO Movimentacoes VALUES(6,2,3,'2026-04-11 03:15:00.3450574','2026-04-11 03:19:31.1534502','TESTE PARA SAIDA 2 X',1040,1050,NULL,'Devolucao','Finalizado',10,4);
+INSERT INTO Movimentacoes VALUES(7,2,3,'2026-04-11 03:28:08.001722',NULL,'TESTE CANCELAR',1050,NULL,'Cancelado via tela','Retirada','Cancelado',NULL,NULL);
+INSERT INTO Movimentacoes VALUES(8,2,3,'2026-04-11 04:26:49.0947654','2026-04-11 10:12:42.585125','TESTE DASHBOARD',1050,1060,NULL,'Devolucao','Finalizado',10,345);
+INSERT INTO Movimentacoes VALUES(9,2,3,'2026-04-11 11:47:11.8739999','2026-04-11 12:17:10.8066521','TESTE DASH',1060,1070,NULL,'Devolucao','Finalizado',10,29);
+INSERT INTO Movimentacoes VALUES(10,2,3,'2026-04-11 13:29:06.1694458','2026-04-11 13:35:56.1763978','SAIDA',1070,1080,NULL,'Devolucao','Finalizado',10,6);
+INSERT INTO Movimentacoes VALUES(11,2,3,'2026-04-11 13:36:10.9980691','2026-04-11 13:39:04.7211878','ATACADAO',1080,1090,NULL,'Devolucao','Finalizado',10,2);
+INSERT INTO Movimentacoes VALUES(12,2,3,'2026-04-11 13:43:26.0248708','2026-04-11 13:46:40.2926224','TESTE CANCELAR',1090,2000,NULL,'Devolucao','Finalizado',910,3);
+INSERT INTO Movimentacoes VALUES(13,2,3,'2026-04-11 13:47:15.2964976','2026-04-11 13:48:22.1455528','TESTE PARA SAIDA 2 X',2000,2010,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(14,2,3,'2026-04-11 18:26:28.6032724','2026-04-11 18:46:40.2029309','ATACADAO',2010,2015,NULL,'Devolucao','Finalizado',5,20);
+INSERT INTO Movimentacoes VALUES(15,2,3,'2026-04-11 18:48:42.6112461','2026-04-11 18:55:29.7644274','RESERVA DEPOIS DA DEVOLUCAO',2015,2020,NULL,'Devolucao','Finalizado',5,6);
+INSERT INTO Movimentacoes VALUES(16,2,3,'2026-04-11 18:55:55.9702829','2026-04-11 19:12:18.6418958','TESTE CARD DASH',2020,2030,NULL,'Devolucao','Finalizado',10,16);
+INSERT INTO Movimentacoes VALUES(17,2,3,'2026-04-11 19:25:58.7249043','2026-04-11 19:38:06.3580368','TESTE',2030,2040,NULL,'Devolucao','Finalizado',10,12);
+INSERT INTO Movimentacoes VALUES(18,2,3,'2026-04-11 19:38:35.8603642','2026-04-11 19:40:34.0243099','ATACADAO',2040,2050,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(19,2,3,'2026-04-11 19:41:39.0131867','2026-04-11 19:51:13.8885562','TESTE KM',2050,2060,NULL,'Devolucao','Finalizado',10,9);
+INSERT INTO Movimentacoes VALUES(20,2,3,'2026-04-11 19:52:01.7951855','2026-04-11 19:56:31.3617373','TESTE CANCELAR',2060,2070,NULL,'Devolucao','Finalizado',10,4);
+INSERT INTO Movimentacoes VALUES(21,2,3,'2026-04-11 19:56:52.2972669','2026-04-11 20:03:37.7289218','ATACADAO',2070,2080,NULL,'Devolucao','Finalizado',10,6);
+INSERT INTO Movimentacoes VALUES(22,2,3,'2026-04-11 20:03:53.9900911','2026-04-11 20:06:41.2530404','SAIDA',2080,2090,NULL,'Devolucao','Finalizado',10,2);
+INSERT INTO Movimentacoes VALUES(23,2,3,'2026-04-11 20:06:55.3658499','2026-04-11 20:11:17.8248822','SAIDA',2090,3000,NULL,'Devolucao','Finalizado',910,4);
+INSERT INTO Movimentacoes VALUES(24,2,3,'2026-04-11 20:11:40.4919784','2026-04-11 20:38:28.6036949','TESTE PARA SAIDA 2 X',3000,3010,NULL,'Devolucao','Finalizado',10,26);
+INSERT INTO Movimentacoes VALUES(25,2,3,'2026-04-11 20:39:02.5661537','2026-04-11 20:41:54.9533022','SAIDA',3010,3020,NULL,'Devolucao','Finalizado',10,2);
+INSERT INTO Movimentacoes VALUES(26,2,3,'2026-04-11 20:42:40.0407908','2026-04-11 20:42:58.6098245','TESTE PARA SAIDA 2 X',3020,3030,NULL,'Devolucao','Finalizado',10,0);
+INSERT INTO Movimentacoes VALUES(27,2,3,'2026-04-11 21:00:04.2476967','2026-04-11 21:02:02.5394866','ATACADAO',3030,3040,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(28,2,3,'2026-04-11 21:10:01.7932097','2026-04-11 21:11:27.2260004','TESTE CANCELAR',3040,3050,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(29,2,3,'2026-04-11 21:11:43.6738319','2026-04-11 21:12:51.9414713','TESTE PARA SAIDA 2 X',3050,3050,NULL,'Devolucao','Finalizado',0,1);
+INSERT INTO Movimentacoes VALUES(30,2,8,'2026-04-12 10:24:14.8298759','2026-04-12 10:24:48.8614005','TESTE DASH',1001,1010,NULL,'Devolucao','Finalizado',9,0);
+INSERT INTO Movimentacoes VALUES(31,2,3,'2026-04-13 09:48:16.5719167','2026-04-13 09:49:29.6465723','ATACADAO',3050,3060,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(32,2,3,'2026-04-13 09:50:15.2660601',NULL,'ATACADAO',3060,NULL,'Cancelado via tela','Retirada','Cancelado',NULL,NULL);
+INSERT INTO Movimentacoes VALUES(33,2,3,'2026-04-13 15:09:35.6168284','2026-04-13 15:13:06.2928556','ATACADAO',3060,3070,NULL,'Devolucao','Finalizado',10,3);
+INSERT INTO Movimentacoes VALUES(34,2,3,'2026-04-13 15:27:17.8307139','2026-04-13 15:28:22.0120494','ATACADAO',3070,3080,NULL,'Devolucao','Finalizado',10,1);
+INSERT INTO Movimentacoes VALUES(35,2,3,'2026-04-13 15:38:04.0502488','2026-04-13 15:43:42.0388474','ATACADAO',3080,3090,NULL,'Devolucao','Finalizado',10,5);
+INSERT INTO Movimentacoes VALUES(36,2,3,'2026-04-13 15:43:52.6327451','2026-04-13 15:44:25.1710692','SAIDA',3090,4000,NULL,'Devolucao','Finalizado',910,0);
+CREATE TABLE IF NOT EXISTS "Logs" (
+
+    "Id" INT NOT NULL CONSTRAINT "PK_Logs" PRIMARY KEY AUTOINCREMENT,
+
+    "MovimentacaoId" INT NOT NULL,
+
+    "DataCancelamento" VARCHAR(255) NOT NULL,
+
+    "Motivo" VARCHAR(255) NOT NULL,
+
+    CONSTRAINT "FK_Logs_Movimentacoes_MovimentacaoId" FOREIGN KEY ("MovimentacaoId") REFERENCES "Movimentacoes" ("Id") ON DELETE CASCADE
+
+);
+CREATE TABLE IF NOT EXISTS "Usuarios" (
+
+    "Id" INT NOT NULL CONSTRAINT "PK_Usuarios" PRIMARY KEY AUTOINCREMENT,
+
+    "Ativo" INT NOT NULL,
+
+    "DataCriacao" VARCHAR(255) NOT NULL,
+
+    "Email" VARCHAR(255) NOT NULL,
+
+    "Nome" VARCHAR(255) NOT NULL,
+
+    "Observacoes" VARCHAR(255) NULL,
+
+    "Perfil" INT NOT NULL,
+
+    "SenhaHash" VARCHAR(255) NULL,
+
+    "UltimaAtualizacao" VARCHAR(255) NULL,
+
+    "UltimoLogin" VARCHAR(255) NULL
+
+, "TokenExpira" VARCHAR(255) NULL, "TokenRecuperacao" VARCHAR(255) NULL);
+INSERT INTO Usuarios VALUES(6,1,'2026-04-10 10:36:49.2549236','lpdias9@gmail.com','Leandro',NULL,0,'$2a$11$23J0n8FqIPLBjfj4jFkixevSwV1qhqvQLPxWLoMUahfiAsxtRdxJy',NULL,'2026-04-13 15:08:07.3411258',NULL,NULL);
+INSERT INTO Usuarios VALUES(7,1,'2026-04-12 12:03:56.7661216','danilo@startstop.com','Danilo',NULL,3,'$2a$11$zS010ey8p6yEd4pWz7jZUuxjqananByUEi5544nUoEzloPTYrkzD.','2026-04-12 12:03:56.9127258','2026-04-12 13:42:58.1381176',NULL,NULL);
+INSERT INTO Usuarios VALUES(8,1,'2026-04-13 09:52:26.4943337','deluiz0415@gmail.com','Andre',NULL,3,'$2a$11$EuvsO52Rb6hkD/gu1eF.5.VBx/r8H8s/k17GmQu4sNq/f2KBb2Y9e','2026-04-13 09:52:26.4957456',NULL,'2026-04-13 10:22:46.096965','68c13156-75bb-40b0-b88c-d3b155caf2e3');
+INSERT INTO Usuarios VALUES(9,1,'2026-04-10 11:21:34.6012197','silas@startstop','Silas',NULL,2,'$2a$11$fyHYw/S0weLgZPGD.5dSb.hnH/cK0GPZ4niQdaXO98VTWblLG.kDu',NULL,'2026-04-12 13:42:42.499434',NULL,NULL);
+INSERT INTO Usuarios VALUES(13,1,'2026-04-12 13:21:49.868481','luiz@startstop.com','Luiz',NULL,2,'$2a$11$RUjFpQe2mmceX4mVPGve1O0/DmW18LcugP45nMKRpupWJ89tQZyse','2026-04-12 13:21:49.8774774','2026-04-12 22:17:07.8642541',NULL,NULL);
+INSERT INTO Usuarios VALUES(14,1,'2026-04-12 15:27:02.502595','mayrasalem@gmail.com','Mayra',NULL,0,'$2a$11$K2CVoaxTKJ7vyrGlvqh7/O0WNO66YAuowna82/x5q5JsUUp4cCPca','2026-04-12 15:27:03.1580901','2026-04-12 15:29:06.9919093','2026-04-12 15:57:51.2253707','db26fea5-0c30-4def-851a-82cbc56b00bc');
+CREATE TABLE Reservas (
+
+    Id INT PRIMARY KEY AUTOINCREMENT,
+
+    VeiculoId INT NOT NULL,
+
+    UsuarioId INT NOT NULL,
+
+    DataInicio DATETIME NOT NULL,
+
+    DataFim DATETIME NOT NULL,
+
+    Status VARCHAR(255) NOT NULL,
+
+
+
+    FOREIGN KEY (VeiculoId) REFERENCES Veiculos(Id) ON DELETE CASCADE,
+
+    FOREIGN KEY (UsuarioId) REFERENCES Usuarios(Id) ON DELETE CASCADE
+
+);
+INSERT INTO Reservas VALUES(38,3,6,'2026-04-12 00:49:00','2026-04-12 00:52:00','Cancelada');
+INSERT INTO Reservas VALUES(39,8,6,'2026-04-12 10:11:00','2026-04-12 10:14:00','Cancelada');
+INSERT INTO Reservas VALUES(40,8,6,'2026-04-12 10:24:00','2026-04-12 10:25:00','Finalizada');
+INSERT INTO Reservas VALUES(41,3,6,'2026-04-12 10:45:00','2026-04-12 10:47:00','Cancelada');
+INSERT INTO Reservas VALUES(42,8,6,'2026-04-12 10:56:00','2026-04-12 14:00:00','Cancelada');
+INSERT INTO Reservas VALUES(43,8,6,'2026-04-12 11:01:00','2026-04-12 11:03:00','Cancelada');
+INSERT INTO Reservas VALUES(44,8,6,'2026-04-12 11:05:00','2026-04-12 11:06:00','Finalizada');
+INSERT INTO Reservas VALUES(45,8,6,'2026-04-12 11:11:00','2026-04-12 14:14:00','Finalizada');
+INSERT INTO Reservas VALUES(46,8,6,'2026-04-12 11:20:00','2026-04-12 11:21:00','Finalizada');
+INSERT INTO Reservas VALUES(47,8,6,'2026-04-12 11:24:00','2026-04-13 11:24:00','Cancelada');
+INSERT INTO Reservas VALUES(48,8,6,'2026-04-12 11:27:00','2026-04-12 11:30:00','Cancelada');
+INSERT INTO Reservas VALUES(49,3,7,'2026-04-12 13:21:00','2026-04-13 13:21:00','Cancelada');
+INSERT INTO Reservas VALUES(50,3,6,'2026-04-13 09:48:00','2026-04-14 09:48:00','Cancelada');
+INSERT INTO Reservas VALUES(51,3,6,'2026-04-13 09:50:00','2026-04-13 09:51:00','Finalizada');
+INSERT INTO Reservas VALUES(52,3,6,'2026-04-13 15:08:00','2026-04-13 17:08:00','Cancelada');
+INSERT INTO Reservas VALUES(53,3,6,'2026-04-13 15:11:00','2026-04-13 18:11:00','Cancelada');
+INSERT INTO Reservas VALUES(54,3,6,'2026-04-13 15:28:00','2026-04-13 15:31:00','Finalizada');
+INSERT INTO Reservas VALUES(55,3,6,'2026-04-13 15:38:00','2026-04-13 17:38:00','Finalizada');
+INSERT INTO Reservas VALUES(56,3,6,'2026-04-13 15:44:00','2026-04-14 15:44:00','Cancelada');
+CREATE TABLE IF NOT EXISTS "Veiculos" (
+	"Id"	INT NOT NULL,
+	"Placa"	VARCHAR(255) NOT NULL,
+	"Status"	VARCHAR(255) NOT NULL DEFAULT 'Dsiponível',
+	"KmAcumulado"	INT NOT NULL,
+	"Bloqueado"	INT NOT NULL DEFAULT 0,
+	"DataInicio"	VARCHAR(255),
+	"DataFim"	VARCHAR(255),
+	"Oficina"	VARCHAR(255),
+	CONSTRAINT "PK_Veiculos" PRIMARY KEY("Id" AUTOINCREMENT)
+);
+INSERT INTO Veiculos VALUES(3,'EZV-8B03','Disponível',4000,0,NULL,'2026-04-13 09:51:40.109379',NULL);
+INSERT INTO Veiculos VALUES(4,'EZV-8109','Disponível',1010,0,NULL,'2026-04-11 12:21:03.4545027',NULL);
+INSERT INTO Veiculos VALUES(7,'SUU-9C70','Disponível',1000,0,NULL,'2026-04-11 03:20:25.4111364',NULL);
+INSERT INTO Veiculos VALUES(8,'GHK-8B51','Disponível',1010,0,NULL,'2026-04-12 11:27:54.7549448',NULL);
+
+CREATE TABLE IF NOT EXISTS sqlite_sequence(name,seq);
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('Usuarios',14);
+INSERT INTO sqlite_sequence VALUES('Motoristas',6);
+INSERT INTO sqlite_sequence VALUES('Movimentacoes',36);
+INSERT INTO sqlite_sequence VALUES('Reservas',56);
+INSERT INTO sqlite_sequence VALUES('Veiculos',8);
+CREATE INDEX "IX_Logs_MovimentacaoId" ON "Logs" ("MovimentacaoId");
+CREATE INDEX "IX_Manutencoes_VeiculoId" ON "Manutencoes" ("VeiculoId");
+CREATE INDEX "IX_Movimentacoes_MotoristaId" ON "Movimentacoes" ("MotoristaId");
+CREATE INDEX "IX_Movimentacoes_VeiculoId" ON "Movimentacoes" ("VeiculoId");
+CREATE INDEX "IX_Motoristas_UsuarioId" ON "Motoristas" ("UsuarioId");
+CREATE INDEX IX_Reservas_VeiculoId ON Reservas(VeiculoId);
+CREATE INDEX IX_Reservas_UsuarioId ON Reservas(UsuarioId);
+
+COMMIT;

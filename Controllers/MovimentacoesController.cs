@@ -21,12 +21,26 @@ public class MovimentacoesController : Controller
     }
 
     // LISTAGEM
-    public async Task<IActionResult> Index() =>
-        View(await _context.Movimentacoes
-            .Include(m => m.Motorista)
-            .Include(m => m.Veiculo)
-            .OrderByDescending(m => m.DataRetirada)
-            .ToListAsync());
+   public async Task<IActionResult> Index()
+{
+    var query = _context.Movimentacoes
+        .Include(m => m.Motorista)
+        .Include(m => m.Veiculo)
+        .AsQueryable();
+
+    // 🔒 Se o usuário for Motorista, mostra apenas suas movimentações
+    if (User.IsInRole("Motorista"))
+    {
+        query = query.Where(m => m.Motorista.Nome == User.Identity.Name);
+    }
+
+    var movimentacoes = await query
+        .OrderByDescending(m => m.DataRetirada)
+        .ToListAsync();
+
+    return View(movimentacoes);
+}
+
 
     // DETALHES
     public async Task<IActionResult> Details(int? id)
@@ -109,69 +123,78 @@ public class MovimentacoesController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    // DEVOLUÇÃO
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> CreateDevolucao(int movimentacaoId, int? kmRetorno)
+    
+ // DEVOLUÇÃO
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> CreateDevolucao(int movimentacaoId, int? kmRetorno)
+{
+    var mov = await _context.Movimentacoes
+        .Include(m => m.Veiculo)
+        .Include(m => m.Motorista)
+        .FirstOrDefaultAsync(m => m.Id == movimentacaoId);
+
+    if (mov == null || mov.Status == "Cancelado")
     {
-        var mov = await _context.Movimentacoes
-            .Include(m => m.Veiculo)
-            .Include(m => m.Motorista)
-            .FirstOrDefaultAsync(m => m.Id == movimentacaoId);
-
-        if (mov == null || mov.Status == "Cancelado")
-        {
-            TempData["MensagemErro"] = "Movimentação inválida.";
-            return RedirectToAction(nameof(Index));
-        }
-
-        if (!kmRetorno.HasValue)
-        {
-            TempData["MensagemErro"] = "Km de retorno é obrigatório na devolução.";
-            return RedirectToAction(nameof(Index));
-        }
-
-        if (kmRetorno.Value < mov.KmSaida)
-        {
-            TempData["MensagemErro"] = "Km de retorno não pode ser menor que o de saída.";
-            return RedirectToAction(nameof(Index));
-        }
-
-        mov.DataRetorno = DateTime.Now;
-        mov.KmRetorno = kmRetorno.Value;
-        mov.KmPercorrido = kmRetorno.Value - mov.KmSaida;
-        mov.TempoPosse = (int)(mov.DataRetorno.Value - mov.DataRetirada).TotalMinutes;
-        mov.TipoMovimentacao = "Devolucao";
-        mov.Status = "Finalizado";
-
-        mov.Veiculo.KmAcumulado = kmRetorno.Value;
-
-        var reservaFutura = await _context.Reservas
-            .Where(r => r.VeiculoId == mov.VeiculoId && r.Status == "Ativa" && r.DataInicio >= DateTime.Now)
-            .OrderBy(r => r.DataInicio)
-            .FirstOrDefaultAsync();
-
-        if (reservaFutura != null)
-        {
-            mov.Veiculo.Status = "Reservado";
-            TempData["Mensagem"] = $"Motorista {mov.Motorista.Nome} devolveu o veículo {mov.Veiculo.Placa}. Há uma reserva futura ativa, veículo marcado como Reservado.";
-        }
-        else
-        {
-            mov.Veiculo.Status = "Disponível";
-            TempData["Mensagem"] = $"Motorista {mov.Motorista.Nome} devolveu o veículo {mov.Veiculo.Placa} às {mov.DataRetorno}. " +
-                                   $"Tempo de posse: {mov.TempoPosse} min. Km percorrido: {mov.KmPercorrido}.";
-        }
-
-        mov.Motorista.Status = "Disponível";
-
-        _context.Update(mov);
-        await _context.SaveChangesAsync();
-
-        _logger.LogInformation("Movimentação {Id} devolvida: motorista {MotoristaId} devolveu veículo {Placa} em {Data}", mov.Id, mov.MotoristaId, mov.Veiculo.Placa, mov.DataRetorno);
-
+        TempData["MensagemErro"] = "Movimentação inválida.";
         return RedirectToAction(nameof(Index));
     }
+     // 🔒 Verificação: apenas o motorista que retirou pode devolver
+    if (mov.Motorista.Nome != User.Identity.Name)
+    {
+        TempData["MensagemErro"] = "Você não pode devolver um veículo que não retirou.";
+        return RedirectToAction(nameof(Index));
+    }
+
+    if (!kmRetorno.HasValue)
+    {
+        TempData["MensagemErro"] = "Km de retorno é obrigatório na devolução.";
+        return RedirectToAction(nameof(Index));
+    }
+
+    if (kmRetorno.Value < mov.KmSaida)
+    {
+        TempData["MensagemErro"] = "Km de retorno não pode ser menor que o de saída.";
+        return RedirectToAction(nameof(Index));
+    }
+
+    mov.DataRetorno = DateTime.Now;
+    mov.KmRetorno = kmRetorno.Value;
+    mov.KmPercorrido = kmRetorno.Value - mov.KmSaida;
+    mov.TempoPosse = (int)(mov.DataRetorno.Value - mov.DataRetirada).TotalMinutes;
+    mov.TipoMovimentacao = "Devolucao";
+    mov.Status = "Finalizado";
+
+    mov.Veiculo.KmAcumulado = kmRetorno.Value;
+
+    // Busca reserva ativa (em andamento ou futura)
+    var reservaAtiva = await _context.Reservas
+        .Where(r => r.VeiculoId == mov.VeiculoId && r.Status == "Ativa")
+        .OrderBy(r => r.DataInicio)
+        .FirstOrDefaultAsync();
+
+    if (reservaAtiva != null)
+    {
+        mov.Veiculo.Status = "Reservado";
+        TempData["Mensagem"] = $"Motorista {mov.Motorista.Nome} devolveu o veículo {mov.Veiculo.Placa}. Há uma reserva ativa, veículo permanece como Reservado.";
+    }
+    else
+    {
+        mov.Veiculo.Status = "Disponível";
+        TempData["Mensagem"] = $"Motorista {mov.Motorista.Nome} devolveu o veículo {mov.Veiculo.Placa} às {mov.DataRetorno}. " +
+                               $"Tempo de posse: {mov.TempoPosse} min. Km percorrido: {mov.KmPercorrido}.";
+    }
+
+    mov.Motorista.Status = "Disponível";
+
+    _context.Update(mov);
+    await _context.SaveChangesAsync();
+
+    _logger.LogInformation("Movimentação {Id} devolvida: motorista {MotoristaId} devolveu veículo {Placa} em {Data}", 
+        mov.Id, mov.MotoristaId, mov.Veiculo.Placa, mov.DataRetorno);
+
+    return RedirectToAction(nameof(Index));
+}
 
     // CANCELAR RETIRADA
     [HttpPost]

@@ -1,0 +1,22 @@
+2026-04-14 16:33:58.137 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-14 16:33:58.274 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-14 16:33:58.276 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-14 16:33:58.276 -03:00 [INF] Hosting environment: Development
+2026-04-14 16:33:58.276 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-14 16:35:26.275 -03:00 [INF] Application is shutting down...
+2026-04-14 16:37:49.288 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-14 16:37:49.531 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-14 16:37:49.544 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-14 16:37:49.545 -03:00 [INF] Hosting environment: Development
+2026-04-14 16:37:49.545 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-14 16:40:17.346 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-14 16:40:17.445 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-14 16:40:17.447 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-14 16:40:17.448 -03:00 [INF] Hosting environment: Development
+2026-04-14 16:40:17.448 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-14 16:41:39.323 -03:00 [INF] Application is shutting down...
+2026-04-14 16:42:01.507 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-14 16:42:01.728 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-14 16:42:01.733 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-14 16:42:01.733 -03:00 [INF] Hosting environment: Development
+2026-04-14 16:42:01.733 -03:00 [INF] Content root path: C:\Projetos\StartStop

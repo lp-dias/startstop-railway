@@ -39,6 +39,17 @@
                 </div>
             </div>
         </div>
+         <!-- Novo card de Reservas -->
+    <div class="col-md-3">
+        <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+                <i class="bi bi-calendar-check display-4 text-info"></i>
+                <h5 class="card-title mt-3">Reservas</h5>
+                <p class="card-text">Visualize, finalize ou cancele reservas de veículos.</p>
+                <a asp-controller="Reserva" asp-action="Index" class="btn btn-info">Acessar</a>
+            </div>
+        </div>
+    </div>
     }
 
     <!-- Motorista e PCO -->
@@ -80,7 +91,9 @@
                 </div>
             </div>
         </div>
-
+        
+        // CÓDIGO DO CARD DE MANUTENCOES NAO RENDERIZARÁ
+        @*
         <div class="col-md-6 offset-md-3 mt-4">
             <div class="card shadow-sm h-100">
                 <div class="card-body text-center">
@@ -91,6 +104,7 @@
                 </div>
             </div>
         </div>
+        *@
     }
 
 </div>

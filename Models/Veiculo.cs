@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StartStop.Models
 {
@@ -9,26 +11,29 @@ namespace StartStop.Models
 
         [Required(ErrorMessage = "A placa é obrigatória")]
         [StringLength(10, ErrorMessage = "Placa inválida")]
-        public string Placa { get; set; }
+        public string Placa { get; set; } = string.Empty;
 
         [Required]
         [RegularExpression("Disponível|Indisponível|Bloqueado|Reservado", ErrorMessage = "Status inválido")]
         public string Status { get; set; } = "Disponível";
 
-
-         // Navegação
-         public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
-
+        // Navegação
+        public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 
         [Range(0, int.MaxValue, ErrorMessage = "Km acumulado não pode ser negativo")]
-        public int KmAcumulado { get; set; }
+        public int KmAcumulado { get; set; } = 0;
 
-        // ✅ Novos campos para controle de bloqueio
-        public bool Bloqueado { get; set; }   // true = bloqueado, false = disponível
+        // ✅ Controle de bloqueio
+        public bool Bloqueado { get; set; } = false;   // mapeado para TINYINT(1) no MySQL
 
-        public DateTime? DataInicio { get; set; } // quando começou o bloqueio
-        public DateTime? DataFim { get; set; }    // quando terminou o bloqueio
-        public string? Oficina { get; set; }       // motivo/descrição (ex.: "Oficina")
+        [Column(TypeName = "datetime")]
+        public DateTime? DataInicio { get; set; }
+
+        [Column(TypeName = "datetime")]
+        public DateTime? DataFim { get; set; }
+
+        [StringLength(100)]
+        public string? Oficina { get; set; }
 
         // 🔑 Propriedade de navegação
         public ICollection<Movimentacao> Movimentacoes { get; set; } = new List<Movimentacao>();

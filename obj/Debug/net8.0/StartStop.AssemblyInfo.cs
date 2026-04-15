@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StartStop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+499f393dcee3e10902b44a857db296cd54d706cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("StartStop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StartStop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

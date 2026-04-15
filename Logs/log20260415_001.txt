@@ -1,0 +1,11 @@
+2026-04-15 13:01:38.556 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 13:01:38.597 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 13:01:38.614 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 13:01:38.626 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 13:01:38.689 -03:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;

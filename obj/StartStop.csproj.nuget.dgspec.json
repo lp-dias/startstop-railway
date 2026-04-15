@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\startstop\\StartStop.csproj": {}
+    "C:\\Projetos\\StartStop\\StartStop.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\startstop\\StartStop.csproj": {
+    "C:\\Projetos\\StartStop\\StartStop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\startstop\\StartStop.csproj",
+        "projectUniqueName": "C:\\Projetos\\StartStop\\StartStop.csproj",
         "projectName": "StartStop",
-        "projectPath": "C:\\projetos\\startstop\\StartStop.csproj",
+        "projectPath": "C:\\Projetos\\StartStop\\StartStop.csproj",
         "packagesPath": "C:\\Users\\lpdia\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\startstop\\obj\\",
+        "outputPath": "C:\\Projetos\\StartStop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lpdia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[4.15.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.5, )"
@@ -59,11 +63,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "MimeKit": {
               "target": "Package",
               "version": "[4.15.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

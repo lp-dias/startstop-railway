@@ -79,69 +79,63 @@
     </div>
 
     <!-- Bloco de Retiradas -->
-    <h4 class="mt-4">🚚 Veículos Retirados</h4>
-    <div class="row">
-        @foreach (var v in Model.Where(x => x.MovimentacaoId != null))
-        {
-            <div class="col-md-3 mb-3">
-                <div class="card border-warning shadow-sm h-100">
-                    <div class="card-header bg-warning text-dark p-2">
-                        <h6 class="mb-0"><i class="bi bi-box-arrow-up-right me-1"></i> @v.Placa</h6>
-                    </div>
-                    <div class="card-body p-2">
-                        <small><strong>Motorista:</strong> @v.Motorista</small><br />
-                        <small><strong>Destino:</strong> @v.Destino</small><br />
-                        @if (v.DataRetirada != null)
-                        {
-                            <small><strong>Retirada:</strong> @v.DataRetirada?.ToString("dd/MM HH:mm")</small>
-                        }
+<h4 class="mt-4">🚚 Veículos Retirados</h4>
+<div class="row">
+    @foreach (var v in Model.Where(x => x.MovimentacaoId != null))
+    {
+        <div class="col-md-3 mb-3">
+            <div class="card border-warning shadow-sm h-100">
+                <div class="card-header bg-warning text-dark p-2">
+                    <h6 class="mb-0"><i class="bi bi-box-arrow-up-right me-1"></i> @v.Placa</h6>
+                </div>
+                <div class="card-body p-2">
+                    <small><strong>Motorista:</strong> @v.Motorista</small><br />
+                    <small><strong>Destino:</strong> @v.Destino</small><br />
+                    @if (v.DataRetirada != null)
+                    {
+                        <small><strong>Retirada:</strong> @v.DataRetirada?.ToString("dd/MM HH:mm")</small>
+                    }
 
-                        @if ((User.IsInRole("Administrador") || User.IsInRole("PCO")) && v.ReservaId == null)
-                        {
-                            <button class="btn btn-primary btn-sm mt-1 w-100" data-bs-toggle="modal" data-bs-target="#reservaModalInd-@v.Id">
-                                Reservar
-                            </button>
-                        }
-
-                        @if (User.IsInRole("Tecnico") || User.IsInRole("Motorista"))
-                        {
-                            <form asp-controller="Movimentacoes" asp-action="Devolver" method="post" class="mt-1">
-                                <input type="hidden" name="MovimentacaoId" value="@v.MovimentacaoId" />
-                                <button type="submit" class="btn btn-danger btn-sm w-100">Devolver</button>
-                            </form>
-                        }
-                    </div>
+                    @if ((User.IsInRole("Administrador") || User.IsInRole("PCO")) && v.ReservaId == null)
+                    {
+                        <button class="btn btn-primary btn-sm mt-1 w-100" data-bs-toggle="modal" data-bs-target="#reservaModalInd-@v.Id">
+                            Reservar
+                        </button>
+                    }
+                    <!-- Nenhum botão para Técnico ou Motorista -->
                 </div>
             </div>
+        </div>
 
-            <!-- Modal de reserva -->
-            @if (User.IsInRole("Administrador") || User.IsInRole("PCO"))
-            {
-                <div class="modal fade" id="reservaModalInd-@v.Id" tabindex="-1">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <form asp-controller="Reserva" asp-action="Reservar" method="post">
-                        <input type="hidden" name="VeiculoId" value="@v.Id" />
-                        <div class="modal-header">
-                          <h6 class="modal-title">Reservar @v.Placa</h6>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                          <label>Início</label>
-                          <input type="datetime-local" name="DataInicio" class="form-control form-control-sm" required />
-                          <label class="mt-2">Fim</label>
-                          <input type="datetime-local" name="DataFim" class="form-control form-control-sm" required />
-                        </div>
-                        <div class="modal-footer">
-                          <button type="submit" class="btn btn-success btn-sm w-100">Confirmar</button>
-                        </div>
-                      </form>
+        <!-- Modal de reserva -->
+        @if (User.IsInRole("Administrador") || User.IsInRole("PCO"))
+        {
+            <div class="modal fade" id="reservaModalInd-@v.Id" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form asp-controller="Reserva" asp-action="Reservar" method="post">
+                    <input type="hidden" name="VeiculoId" value="@v.Id" />
+                    <div class="modal-header">
+                      <h6 class="modal-title">Reservar @v.Placa</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                  </div>
+                    <div class="modal-body">
+                      <label>Início</label>
+                      <input type="datetime-local" name="DataInicio" class="form-control form-control-sm" required />
+                      <label class="mt-2">Fim</label>
+                      <input type="datetime-local" name="DataFim" class="form-control form-control-sm" required />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success btn-sm w-100">Confirmar</button>
+                    </div>
+                  </form>
                 </div>
-            }
+              </div>
+            </div>
         }
-    </div>
+    }
+</div>
+
 
     <!-- Bloco de Disponíveis -->
 <h4 class="mt-4">✅ Veículos Disponíveis</h4>
@@ -192,6 +186,7 @@
                     </div>
                 </div>
             </div>
+            
         }
     } <!-- fechamento correto do foreach -->
 </div>

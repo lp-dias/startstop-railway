@@ -100,7 +100,17 @@ namespace StartStop.Controllers
                 veiculoDb.DataInicio = veiculo.DataInicio;
                 veiculoDb.DataFim = veiculo.DataFim;
                 veiculoDb.Oficina = veiculo.Oficina;
-                veiculoDb.Status = veiculoDb.Bloqueado ? "Bloqueado" : "Disponível";
+
+                if (veiculoDb.Bloqueado)
+                {
+                    veiculoDb.Status = "Bloqueado";
+                }
+                else
+                {
+                    // ✅ mantém reservado se já estava
+                    if (veiculoDb.Status != "Reservado")
+                        veiculoDb.Status = "Disponível";
+                }
             }
             else if (User.IsInRole("Administrador"))
             {
@@ -110,7 +120,17 @@ namespace StartStop.Controllers
                 veiculoDb.DataInicio = veiculo.DataInicio;
                 veiculoDb.DataFim = veiculo.DataFim;
                 veiculoDb.Oficina = veiculo.Oficina;
-                veiculoDb.Status = veiculoDb.Bloqueado ? "Bloqueado" : "Disponível";
+
+                if (veiculoDb.Bloqueado)
+                {
+                    veiculoDb.Status = "Bloqueado";
+                }
+                else
+                {
+                    // ✅ mantém reservado se já estava
+                    if (veiculoDb.Status != "Reservado")
+                        veiculoDb.Status = "Disponível";
+                }
             }
 
             _context.Update(veiculoDb);
@@ -139,16 +159,19 @@ namespace StartStop.Controllers
             if (veiculo.Bloqueado)
             {
                 veiculo.DataInicio = DateTime.Now;
-                veiculo.Status = "Bloqueado"; // ✅ volta a ser Bloqueado
+                veiculo.Status = "Bloqueado";
                 veiculo.Oficina = "Oficina";
                 veiculo.DataFim = null;
             }
             else
             {
                 veiculo.DataFim = DateTime.Now;
-                veiculo.Status = "Disponível";
                 veiculo.Oficina = null;
                 veiculo.DataInicio = null;
+
+                // ✅ mantém reservado se já estava
+                if (veiculo.Status != "Reservado")
+                    veiculo.Status = "Disponível";
             }
 
             _context.Update(veiculo);

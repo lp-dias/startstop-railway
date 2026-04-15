@@ -11,7 +11,6 @@
 </head>
 <body>
     <header>
-        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
@@ -26,8 +25,6 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-
-                        <!-- Dashboard visível para todos perfis -->
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Dashboard" asp-action="Index">
                                 <i class="bi bi-speedometer2 me-1"></i> Dashboard
@@ -44,6 +41,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" asp-controller="Veiculos" asp-action="Index"><i class="bi bi-car-front me-1"></i> Veículos</a></li>
                                     <li><a class="dropdown-item" asp-controller="Usuarios" asp-action="Index"><i class="bi bi-people-fill me-1"></i> Usuários</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Motoristas" asp-action="Index"><i class="bi bi-person-badge-fill me-1"></i> Motoristas</a></li>
                                 </ul>
                             </li>
 
@@ -52,8 +50,10 @@
                                     <i class="bi bi-gear-fill me-1"></i> Administração
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Reserva" asp-action="Index"><i class="bi bi-calendar-check me-1"></i> Reservas</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Manutencao" asp-action="Index"><i class="bi bi-tools me-1"></i> Manutenções</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Movimentacoes" asp-action="Index"><i class="bi bi-arrow-left-right me-1"></i> Movimentações</a></li>
                                     <li><a class="dropdown-item" asp-controller="Logs" asp-action="Index"><i class="bi bi-journal-text me-1"></i> Log</a></li>
-                                    <li><a class="dropdown-item" asp-controller="Motoristas" asp-action="Index"><i class="bi bi-person-badge-fill me-1"></i> Motoristas</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li class="dropdown-header">📊 Relatórios</li>
                                     <li><a class="dropdown-item" asp-controller="Movimentacoes" asp-action="RelatorioPeriodo"><i class="bi bi-calendar-range me-1"></i> Por Período</a></li>
@@ -62,7 +62,7 @@
                             </li>
                         }
 
-                        <!-- Motorista e PCO juntos -->
+                        <!-- Motorista e PCO -->
                         @if (User.IsInRole("Motorista") || User.IsInRole("PCO"))
                         {
                             <li class="nav-item dropdown">
@@ -70,6 +70,7 @@
                                     <i class="bi bi-play-circle-fill me-1"></i> Operações
                                 </a>
                                 <ul class="dropdown-menu">
+                                    
                                     <li><a class="dropdown-item" asp-controller="Movimentacoes" asp-action="Index"><i class="bi bi-arrow-left-right me-1"></i> Movimentações</a></li>
                                 </ul>
                             </li>
@@ -79,10 +80,13 @@
                         @if (User.IsInRole("Tecnico"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Veiculos" asp-action="Index">Veículos</a>
+                                <a class="nav-link" asp-controller="Veiculos" asp-action="Index"><i class="bi bi-car-front me-1"></i> Veículos</a>
                             </li>
+                            //<li class="nav-item">
+                            //    <a class="nav-link" asp-controller="Manutencao" asp-action="Index"><i class="bi bi-tools me-1"></i> Manutenções</a>
+                            //</li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Manutencao" asp-action="Index">Manutenções</a>
+                                <a class="nav-link" asp-controller="Movimentacoes" asp-action="Index"><i class="bi bi-arrow-left-right me-1"></i> Movimentações</a>
                             </li>
                         }
                     </ul>
@@ -129,9 +133,11 @@
     </div>
 
     <footer class="bg-light text-center py-3 mt-5 border-top">
-        <small class="text-muted">© 2026 - StartStop</small>
+        <small class="text-muted">© 2026 - StartStop Desenvolvedor: Leandro Pires Dias</small>
     </footer>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+
 </body>
 </html>

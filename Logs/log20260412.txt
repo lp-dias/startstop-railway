@@ -2032,3 +2032,859 @@ FROM "Veiculos" AS "v"
 2026-04-12 18:46:51.433 -03:00 [INF] Executed action StartStop.Controllers.VeiculosController.Index (StartStop) in 4.1211ms
 2026-04-12 18:46:51.433 -03:00 [INF] Executed endpoint 'StartStop.Controllers.VeiculosController.Index (StartStop)'
 2026-04-12 18:46:51.433 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Veiculos - 200 null text/html; charset=utf-8 5.0072ms
+2026-04-12 21:37:04.331 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-12 21:37:04.516 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-12 21:37:04.520 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 21:37:04.520 -03:00 [INF] Hosting environment: Development
+2026-04-12 21:37:04.520 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-12 21:37:28.878 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/usuarios - null null
+2026-04-12 21:37:28.951 -03:00 [INF] Executing endpoint 'StartStop.Controllers.UsuariosController.Index (StartStop)'
+2026-04-12 21:37:29.013 -03:00 [INF] Route matched with {action = "Index", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.UsuariosController (StartStop).
+2026-04-12 21:37:30.752 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+FROM "Usuarios" AS "u"
+2026-04-12 21:37:30.912 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:37:31.069 -03:00 [INF] Executed ViewResult - view Index executed in 159.9394ms.
+2026-04-12 21:37:31.072 -03:00 [INF] Executed action StartStop.Controllers.UsuariosController.Index (StartStop) in 2058.3346ms
+2026-04-12 21:37:31.073 -03:00 [INF] Executed endpoint 'StartStop.Controllers.UsuariosController.Index (StartStop)'
+2026-04-12 21:37:31.090 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/usuarios - 200 null text/html; charset=utf-8 2213.6289ms
+2026-04-12 21:37:31.099 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-04-12 21:37:31.101 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-04-12 21:37:31.103 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/css/site.css - null null
+2026-04-12 21:37:31.113 -03:00 [INF] The file /css/site.css was not modified
+2026-04-12 21:37:31.113 -03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-04-12 21:37:31.113 -03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-04-12 21:37:31.114 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/css/site.css - 304 null text/css 11.133ms
+2026-04-12 21:37:31.114 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 15.8495ms
+2026-04-12 21:37:31.114 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 12.8952ms
+2026-04-12 21:37:31.144 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/usuarios - null null
+2026-04-12 21:37:31.148 -03:00 [INF] Executing endpoint 'StartStop.Controllers.UsuariosController.Index (StartStop)'
+2026-04-12 21:37:31.148 -03:00 [INF] Route matched with {action = "Index", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.UsuariosController (StartStop).
+2026-04-12 21:37:31.174 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+FROM "Usuarios" AS "u"
+2026-04-12 21:37:31.176 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:37:31.183 -03:00 [INF] Executed ViewResult - view Index executed in 8.0976ms.
+2026-04-12 21:37:31.184 -03:00 [INF] Executed action StartStop.Controllers.UsuariosController.Index (StartStop) in 35.7404ms
+2026-04-12 21:37:31.184 -03:00 [INF] Executed endpoint 'StartStop.Controllers.UsuariosController.Index (StartStop)'
+2026-04-12 21:37:31.184 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/usuarios - 200 null text/html; charset=utf-8 40.4787ms
+2026-04-12 21:37:32.883 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 21:37:32.886 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:37:32.888 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 21:37:32.890 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:37:32.898 -03:00 [INF] Executed ViewResult - view Index executed in 9.486ms.
+2026-04-12 21:37:32.899 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 10.1242ms
+2026-04-12 21:37:32.899 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:37:32.899 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 15.3134ms
+2026-04-12 21:37:32.937 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 21:37:32.938 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:37:32.938 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 21:37:32.939 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:37:32.944 -03:00 [INF] Executed ViewResult - view Index executed in 5.3565ms.
+2026-04-12 21:37:32.945 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 6.2027ms
+2026-04-12 21:37:32.945 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:37:32.945 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 7.7576ms
+2026-04-12 21:37:34.742 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 21:37:34.742 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:37:34.744 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 21:37:34.747 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:37:34.792 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 48.6551ms
+2026-04-12 21:37:34.793 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:37:34.800 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-12 21:37:34.852 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 500 null text/html; charset=utf-8 110.17ms
+2026-04-12 21:37:34.892 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 21:37:34.893 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:37:34.893 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 21:37:34.893 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:37:34.900 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 7.3185ms
+2026-04-12 21:37:34.901 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:37:34.901 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-12 21:37:34.906 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 500 null text/plain; charset=utf-8 13.5665ms
+2026-04-12 21:38:30.111 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-12 21:38:30.201 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-12 21:38:30.203 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 21:38:30.204 -03:00 [INF] Hosting environment: Development
+2026-04-12 21:38:30.204 -03:00 [INF] Content root path: C:\projetos\startstop
+2026-04-12 21:38:48.646 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 21:38:48.695 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:38:48.725 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 21:38:48.745 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:38:48.835 -03:00 [INF] Executed ViewResult - view Index executed in 91.5253ms.
+2026-04-12 21:38:48.839 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 113.237ms
+2026-04-12 21:38:48.840 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:38:48.844 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 200.099ms
+2026-04-12 21:38:48.989 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 21:38:48.990 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:38:48.990 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 21:38:48.990 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:38:48.993 -03:00 [INF] Executed ViewResult - view Index executed in 2.5705ms.
+2026-04-12 21:38:48.993 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 2.8817ms
+2026-04-12 21:38:48.993 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 21:38:48.993 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 4.8104ms
+2026-04-12 21:38:51.399 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 21:38:51.403 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:38:51.405 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 21:38:51.546 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:38:51.590 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 184.8879ms
+2026-04-12 21:38:51.591 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:38:51.595 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-12 21:38:51.636 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 500 null text/html; charset=utf-8 236.6463ms
+2026-04-12 21:38:51.677 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 21:38:51.680 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:38:51.680 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 21:38:51.692 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 21:38:51.695 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 14.9674ms
+2026-04-12 21:38:51.695 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 21:38:51.696 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-12 21:38:51.702 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 500 null text/plain; charset=utf-8 25.762ms
+2026-04-12 21:40:34.490 -03:00 [INF] Application is shutting down...
+2026-04-12 22:15:36.070 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-12 22:15:36.218 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-12 22:15:36.221 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 22:15:36.222 -03:00 [INF] Hosting environment: Development
+2026-04-12 22:15:36.222 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-12 22:15:41.968 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/login - null null
+2026-04-12 22:15:42.032 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:42.073 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:15:42.282 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:15:42.421 -03:00 [INF] Executed ViewResult - view Index executed in 143.6891ms.
+2026-04-12 22:15:42.428 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 354.1789ms
+2026-04-12 22:15:42.429 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:42.435 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/login - 200 null text/html; charset=utf-8 469.261ms
+2026-04-12 22:15:42.635 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/login - null null
+2026-04-12 22:15:42.639 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:42.639 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:15:42.647 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:15:42.653 -03:00 [INF] Executed ViewResult - view Index executed in 6.1454ms.
+2026-04-12 22:15:42.653 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 13.8579ms
+2026-04-12 22:15:42.653 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:42.654 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/login - 200 null text/html; charset=utf-8 19.1052ms
+2026-04-12 22:15:49.529 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5212/Login - application/x-www-form-urlencoded 220
+2026-04-12 22:15:49.532 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:49.546 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:15:51.229 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5212/Login - application/x-www-form-urlencoded 220
+2026-04-12 22:15:51.229 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:51.229 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:15:51.250 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__model_Email_0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__model_Email_0
+LIMIT 1
+2026-04-12 22:15:51.255 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__model_Email_0
+LIMIT 1
+2026-04-12 22:15:52.088 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:15:52.088 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:15:52.209 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 17), @p3='?' (Size = 7), @p4='?', @p5='?' (DbType = Int32), @p6='?' (Size = 60), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Ativo" = @p0, "DataCriacao" = @p1, "Email" = @p2, "Nome" = @p3, "Observacoes" = @p4, "Perfil" = @p5, "SenhaHash" = @p6, "TokenExpira" = @p7, "TokenRecuperacao" = @p8, "UltimaAtualizacao" = @p9, "UltimoLogin" = @p10
+WHERE "Id" = @p11
+RETURNING 1;
+2026-04-12 22:15:52.222 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-12 22:15:52.225 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-12 22:15:52.226 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-12 22:15:52.226 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 2680.6394ms
+2026-04-12 22:15:52.226 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:52.233 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5212/Login - 499 null null 2703.5283ms
+2026-04-12 22:15:52.371 -03:00 [INF] Executed DbCommand (164ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 17), @p3='?' (Size = 7), @p4='?', @p5='?' (DbType = Int32), @p6='?' (Size = 60), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Ativo" = @p0, "DataCriacao" = @p1, "Email" = @p2, "Nome" = @p3, "Observacoes" = @p4, "Perfil" = @p5, "SenhaHash" = @p6, "TokenExpira" = @p7, "TokenRecuperacao" = @p8, "UltimaAtualizacao" = @p9, "UltimoLogin" = @p10
+WHERE "Id" = @p11
+RETURNING 1;
+2026-04-12 22:15:52.373 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-12 22:15:52.374 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-12 22:15:52.375 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-12 22:15:52.375 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 1145.6185ms
+2026-04-12 22:15:52.375 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:15:52.376 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5212/Login - 302 0 null 1147.2005ms
+2026-04-12 22:15:52.386 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:15:52.391 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:15:52.393 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:15:52.396 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:15:52.417 -03:00 [INF] Executed ViewResult - view Index executed in 22.9597ms.
+2026-04-12 22:15:52.417 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 23.8647ms
+2026-04-12 22:15:52.418 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:15:52.418 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 32.3248ms
+2026-04-12 22:15:52.456 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:15:52.457 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:15:52.457 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:15:52.457 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:15:52.458 -03:00 [INF] Executed ViewResult - view Index executed in 0.8615ms.
+2026-04-12 22:15:52.458 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 0.9685ms
+2026-04-12 22:15:52.458 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:15:52.458 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 1.6284ms
+2026-04-12 22:15:53.937 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Dashboard - null null
+2026-04-12 22:15:53.942 -03:00 [INF] Executing endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:15:53.946 -03:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.DashboardController (StartStop).
+2026-04-12 22:15:54.045 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:15:54.166 -03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-04-12 22:15:54.178 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status", "t"."Id", "t"."DataFim", "t"."DataInicio", "t"."Status", "t"."UsuarioId", "t"."VeiculoId", "t"."Id0", "t"."Ativo", "t"."DataCriacao", "t"."Email", "t"."Nome", "t"."Observacoes", "t"."Perfil", "t"."SenhaHash", "t"."TokenExpira", "t"."TokenRecuperacao", "t"."UltimaAtualizacao", "t"."UltimoLogin", "t0"."Id", "t0"."DataRetirada", "t0"."DataRetorno", "t0"."Destino", "t0"."KmPercorrido", "t0"."KmRetorno", "t0"."KmSaida", "t0"."MotivoCancelamento", "t0"."MotoristaId", "t0"."Status", "t0"."TempoPosse", "t0"."TipoMovimentacao", "t0"."VeiculoId", "t0"."Id0", "t0"."Area", "t0"."Ativo", "t0"."Email", "t0"."Empregado", "t0"."Nome", "t0"."Status0", "t0"."Telefone", "t0"."UsuarioId"
+FROM "Veiculos" AS "v"
+LEFT JOIN (
+    SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId", "u"."Id" AS "Id0", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+    FROM "Reservas" AS "r"
+    INNER JOIN "Usuarios" AS "u" ON "r"."UsuarioId" = "u"."Id"
+) AS "t" ON "v"."Id" = "t"."VeiculoId"
+LEFT JOIN (
+    SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id" AS "Id0", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status" AS "Status0", "m0"."Telefone", "m0"."UsuarioId"
+    FROM "Movimentacoes" AS "m"
+    INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+) AS "t0" ON "v"."Id" = "t0"."VeiculoId"
+ORDER BY "v"."Id", "t"."Id", "t"."Id0", "t0"."Id"
+2026-04-12 22:15:54.305 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.307 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.307 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.308 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.362 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:15:54.417 -03:00 [INF] Executed ViewResult - view Index executed in 55.4399ms.
+2026-04-12 22:15:54.417 -03:00 [INF] Executed action StartStop.Controllers.DashboardController.Index (StartStop) in 470.3562ms
+2026-04-12 22:15:54.417 -03:00 [INF] Executed endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:15:54.418 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Dashboard - 200 null text/html; charset=utf-8 481.3276ms
+2026-04-12 22:15:54.462 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Dashboard - null null
+2026-04-12 22:15:54.464 -03:00 [INF] Executing endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:15:54.464 -03:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.DashboardController (StartStop).
+2026-04-12 22:15:54.465 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:15:54.466 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status", "t"."Id", "t"."DataFim", "t"."DataInicio", "t"."Status", "t"."UsuarioId", "t"."VeiculoId", "t"."Id0", "t"."Ativo", "t"."DataCriacao", "t"."Email", "t"."Nome", "t"."Observacoes", "t"."Perfil", "t"."SenhaHash", "t"."TokenExpira", "t"."TokenRecuperacao", "t"."UltimaAtualizacao", "t"."UltimoLogin", "t0"."Id", "t0"."DataRetirada", "t0"."DataRetorno", "t0"."Destino", "t0"."KmPercorrido", "t0"."KmRetorno", "t0"."KmSaida", "t0"."MotivoCancelamento", "t0"."MotoristaId", "t0"."Status", "t0"."TempoPosse", "t0"."TipoMovimentacao", "t0"."VeiculoId", "t0"."Id0", "t0"."Area", "t0"."Ativo", "t0"."Email", "t0"."Empregado", "t0"."Nome", "t0"."Status0", "t0"."Telefone", "t0"."UsuarioId"
+FROM "Veiculos" AS "v"
+LEFT JOIN (
+    SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId", "u"."Id" AS "Id0", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+    FROM "Reservas" AS "r"
+    INNER JOIN "Usuarios" AS "u" ON "r"."UsuarioId" = "u"."Id"
+) AS "t" ON "v"."Id" = "t"."VeiculoId"
+LEFT JOIN (
+    SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id" AS "Id0", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status" AS "Status0", "m0"."Telefone", "m0"."UsuarioId"
+    FROM "Movimentacoes" AS "m"
+    INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+) AS "t0" ON "v"."Id" = "t0"."VeiculoId"
+ORDER BY "v"."Id", "t"."Id", "t"."Id0", "t0"."Id"
+2026-04-12 22:15:54.469 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.469 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.470 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.470 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:15:54.470 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:15:54.471 -03:00 [INF] Executed ViewResult - view Index executed in 1.5241ms.
+2026-04-12 22:15:54.472 -03:00 [INF] Executed action StartStop.Controllers.DashboardController.Index (StartStop) in 7.5795ms
+2026-04-12 22:15:54.472 -03:00 [INF] Executed endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:15:54.472 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Dashboard - 200 null text/html; charset=utf-8 9.5241ms
+2026-04-12 22:16:00.747 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo - null null
+2026-04-12 22:16:00.749 -03:00 [INF] Executing endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:00.754 -03:00 [INF] Route matched with {action = "RelatorioPeriodo", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RelatorioPeriodo(System.DateTime, System.DateTime) on controller MovimentacoesController (StartStop).
+2026-04-12 22:16:00.768 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__inicio_0='?' (DbType = DateTime), @__fim_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+WHERE "m"."DataRetirada" >= @__inicio_0 AND "m"."DataRetirada" <= @__fim_1
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:16:00.769 -03:00 [INF] Executing ViewResult, running view RelatorioPeriodo.
+2026-04-12 22:16:00.775 -03:00 [INF] Executed ViewResult - view RelatorioPeriodo executed in 6.7309ms.
+2026-04-12 22:16:00.775 -03:00 [INF] Executed action MovimentacoesController.RelatorioPeriodo (StartStop) in 20.7747ms
+2026-04-12 22:16:00.775 -03:00 [INF] Executed endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:00.775 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo - 200 null text/html; charset=utf-8 27.8728ms
+2026-04-12 22:16:00.809 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo - null null
+2026-04-12 22:16:00.812 -03:00 [INF] Executing endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:00.812 -03:00 [INF] Route matched with {action = "RelatorioPeriodo", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RelatorioPeriodo(System.DateTime, System.DateTime) on controller MovimentacoesController (StartStop).
+2026-04-12 22:16:00.814 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__inicio_0='?' (DbType = DateTime), @__fim_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+WHERE "m"."DataRetirada" >= @__inicio_0 AND "m"."DataRetirada" <= @__fim_1
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:16:00.814 -03:00 [INF] Executing ViewResult, running view RelatorioPeriodo.
+2026-04-12 22:16:00.817 -03:00 [INF] Executed ViewResult - view RelatorioPeriodo executed in 3.0711ms.
+2026-04-12 22:16:00.818 -03:00 [INF] Executed action MovimentacoesController.RelatorioPeriodo (StartStop) in 5.6746ms
+2026-04-12 22:16:00.818 -03:00 [INF] Executed endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:00.818 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo - 200 null text/html; charset=utf-8 8.7755ms
+2026-04-12 22:16:07.997 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-12&fim=2026-04-12 - null null
+2026-04-12 22:16:07.997 -03:00 [INF] Executing endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:07.997 -03:00 [INF] Route matched with {action = "RelatorioPeriodo", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RelatorioPeriodo(System.DateTime, System.DateTime) on controller MovimentacoesController (StartStop).
+2026-04-12 22:16:08.003 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__inicio_0='?' (DbType = DateTime), @__fim_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+WHERE "m"."DataRetirada" >= @__inicio_0 AND "m"."DataRetirada" <= @__fim_1
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:16:08.004 -03:00 [INF] Executing ViewResult, running view RelatorioPeriodo.
+2026-04-12 22:16:08.005 -03:00 [INF] Executed ViewResult - view RelatorioPeriodo executed in 1.5496ms.
+2026-04-12 22:16:08.005 -03:00 [INF] Executed action MovimentacoesController.RelatorioPeriodo (StartStop) in 8.0787ms
+2026-04-12 22:16:08.005 -03:00 [INF] Executed endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:08.006 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-12&fim=2026-04-12 - 200 null text/html; charset=utf-8 8.832ms
+2026-04-12 22:16:08.047 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-12&fim=2026-04-12 - null null
+2026-04-12 22:16:08.048 -03:00 [INF] Executing endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:08.048 -03:00 [INF] Route matched with {action = "RelatorioPeriodo", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RelatorioPeriodo(System.DateTime, System.DateTime) on controller MovimentacoesController (StartStop).
+2026-04-12 22:16:08.050 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__inicio_0='?' (DbType = DateTime), @__fim_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+WHERE "m"."DataRetirada" >= @__inicio_0 AND "m"."DataRetirada" <= @__fim_1
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:16:08.051 -03:00 [INF] Executing ViewResult, running view RelatorioPeriodo.
+2026-04-12 22:16:08.055 -03:00 [INF] Executed ViewResult - view RelatorioPeriodo executed in 3.9711ms.
+2026-04-12 22:16:08.055 -03:00 [INF] Executed action MovimentacoesController.RelatorioPeriodo (StartStop) in 6.8711ms
+2026-04-12 22:16:08.055 -03:00 [INF] Executed endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:08.055 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-12&fim=2026-04-12 - 200 null text/html; charset=utf-8 7.7444ms
+2026-04-12 22:16:17.433 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-11&fim=2026-04-14 - null null
+2026-04-12 22:16:17.433 -03:00 [INF] Executing endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:17.433 -03:00 [INF] Route matched with {action = "RelatorioPeriodo", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RelatorioPeriodo(System.DateTime, System.DateTime) on controller MovimentacoesController (StartStop).
+2026-04-12 22:16:17.435 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__inicio_0='?' (DbType = DateTime), @__fim_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+WHERE "m"."DataRetirada" >= @__inicio_0 AND "m"."DataRetirada" <= @__fim_1
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:16:17.441 -03:00 [INF] Executing ViewResult, running view RelatorioPeriodo.
+2026-04-12 22:16:17.442 -03:00 [INF] Executed ViewResult - view RelatorioPeriodo executed in 1.7377ms.
+2026-04-12 22:16:17.442 -03:00 [INF] Executed action MovimentacoesController.RelatorioPeriodo (StartStop) in 9.1277ms
+2026-04-12 22:16:17.442 -03:00 [INF] Executed endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:17.443 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-11&fim=2026-04-14 - 200 null text/html; charset=utf-8 9.8077ms
+2026-04-12 22:16:17.479 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-11&fim=2026-04-14 - null null
+2026-04-12 22:16:17.479 -03:00 [INF] Executing endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:17.479 -03:00 [INF] Route matched with {action = "RelatorioPeriodo", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RelatorioPeriodo(System.DateTime, System.DateTime) on controller MovimentacoesController (StartStop).
+2026-04-12 22:16:17.481 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__inicio_0='?' (DbType = DateTime), @__fim_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+WHERE "m"."DataRetirada" >= @__inicio_0 AND "m"."DataRetirada" <= @__fim_1
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:16:17.483 -03:00 [INF] Executing ViewResult, running view RelatorioPeriodo.
+2026-04-12 22:16:17.484 -03:00 [INF] Executed ViewResult - view RelatorioPeriodo executed in 0.8105ms.
+2026-04-12 22:16:17.484 -03:00 [INF] Executed action MovimentacoesController.RelatorioPeriodo (StartStop) in 4.5376ms
+2026-04-12 22:16:17.484 -03:00 [INF] Executed endpoint 'MovimentacoesController.RelatorioPeriodo (StartStop)'
+2026-04-12 22:16:17.484 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes/RelatorioPeriodo?inicio=2026-04-11&fim=2026-04-14 - 200 null text/html; charset=utf-8 5.5447ms
+2026-04-12 22:16:25.491 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Dashboard - null null
+2026-04-12 22:16:25.491 -03:00 [INF] Executing endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:16:25.492 -03:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.DashboardController (StartStop).
+2026-04-12 22:16:25.492 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:16:25.494 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status", "t"."Id", "t"."DataFim", "t"."DataInicio", "t"."Status", "t"."UsuarioId", "t"."VeiculoId", "t"."Id0", "t"."Ativo", "t"."DataCriacao", "t"."Email", "t"."Nome", "t"."Observacoes", "t"."Perfil", "t"."SenhaHash", "t"."TokenExpira", "t"."TokenRecuperacao", "t"."UltimaAtualizacao", "t"."UltimoLogin", "t0"."Id", "t0"."DataRetirada", "t0"."DataRetorno", "t0"."Destino", "t0"."KmPercorrido", "t0"."KmRetorno", "t0"."KmSaida", "t0"."MotivoCancelamento", "t0"."MotoristaId", "t0"."Status", "t0"."TempoPosse", "t0"."TipoMovimentacao", "t0"."VeiculoId", "t0"."Id0", "t0"."Area", "t0"."Ativo", "t0"."Email", "t0"."Empregado", "t0"."Nome", "t0"."Status0", "t0"."Telefone", "t0"."UsuarioId"
+FROM "Veiculos" AS "v"
+LEFT JOIN (
+    SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId", "u"."Id" AS "Id0", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+    FROM "Reservas" AS "r"
+    INNER JOIN "Usuarios" AS "u" ON "r"."UsuarioId" = "u"."Id"
+) AS "t" ON "v"."Id" = "t"."VeiculoId"
+LEFT JOIN (
+    SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id" AS "Id0", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status" AS "Status0", "m0"."Telefone", "m0"."UsuarioId"
+    FROM "Movimentacoes" AS "m"
+    INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+) AS "t0" ON "v"."Id" = "t0"."VeiculoId"
+ORDER BY "v"."Id", "t"."Id", "t"."Id0", "t0"."Id"
+2026-04-12 22:16:25.499 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.499 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.499 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.500 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.500 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:16:25.502 -03:00 [INF] Executed ViewResult - view Index executed in 1.4767ms.
+2026-04-12 22:16:25.502 -03:00 [INF] Executed action StartStop.Controllers.DashboardController.Index (StartStop) in 10.3869ms
+2026-04-12 22:16:25.502 -03:00 [INF] Executed endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:16:25.502 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Dashboard - 200 null text/html; charset=utf-8 11.1662ms
+2026-04-12 22:16:25.537 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Dashboard - null null
+2026-04-12 22:16:25.538 -03:00 [INF] Executing endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:16:25.538 -03:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.DashboardController (StartStop).
+2026-04-12 22:16:25.539 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:16:25.540 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status", "t"."Id", "t"."DataFim", "t"."DataInicio", "t"."Status", "t"."UsuarioId", "t"."VeiculoId", "t"."Id0", "t"."Ativo", "t"."DataCriacao", "t"."Email", "t"."Nome", "t"."Observacoes", "t"."Perfil", "t"."SenhaHash", "t"."TokenExpira", "t"."TokenRecuperacao", "t"."UltimaAtualizacao", "t"."UltimoLogin", "t0"."Id", "t0"."DataRetirada", "t0"."DataRetorno", "t0"."Destino", "t0"."KmPercorrido", "t0"."KmRetorno", "t0"."KmSaida", "t0"."MotivoCancelamento", "t0"."MotoristaId", "t0"."Status", "t0"."TempoPosse", "t0"."TipoMovimentacao", "t0"."VeiculoId", "t0"."Id0", "t0"."Area", "t0"."Ativo", "t0"."Email", "t0"."Empregado", "t0"."Nome", "t0"."Status0", "t0"."Telefone", "t0"."UsuarioId"
+FROM "Veiculos" AS "v"
+LEFT JOIN (
+    SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId", "u"."Id" AS "Id0", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+    FROM "Reservas" AS "r"
+    INNER JOIN "Usuarios" AS "u" ON "r"."UsuarioId" = "u"."Id"
+) AS "t" ON "v"."Id" = "t"."VeiculoId"
+LEFT JOIN (
+    SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id" AS "Id0", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status" AS "Status0", "m0"."Telefone", "m0"."UsuarioId"
+    FROM "Movimentacoes" AS "m"
+    INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+) AS "t0" ON "v"."Id" = "t0"."VeiculoId"
+ORDER BY "v"."Id", "t"."Id", "t"."Id0", "t0"."Id"
+2026-04-12 22:16:25.543 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.544 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.544 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.544 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:16:25.544 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:16:25.545 -03:00 [INF] Executed ViewResult - view Index executed in 0.7496ms.
+2026-04-12 22:16:25.545 -03:00 [INF] Executed action StartStop.Controllers.DashboardController.Index (StartStop) in 7.2902ms
+2026-04-12 22:16:25.545 -03:00 [INF] Executed endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:16:25.545 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Dashboard - 200 null text/html; charset=utf-8 8.0008ms
+2026-04-12 22:16:55.842 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-12 22:16:55.972 -03:00 [INF] Now listening on: http://localhost:5212
+2026-04-12 22:16:55.974 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-12 22:16:55.975 -03:00 [INF] Hosting environment: Development
+2026-04-12 22:16:55.975 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-12 22:16:59.844 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login/Logout - null null
+2026-04-12 22:16:59.920 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Logout (StartStop)'
+2026-04-12 22:16:59.964 -03:00 [INF] Route matched with {action = "Logout", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:00.174 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-12 22:17:00.187 -03:00 [INF] Executing RedirectResult, redirecting to /Login.
+2026-04-12 22:17:00.193 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Logout (StartStop) in 223.9511ms
+2026-04-12 22:17:00.196 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Logout (StartStop)'
+2026-04-12 22:17:00.204 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login/Logout - 302 0 null 361.8379ms
+2026-04-12 22:17:00.208 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 22:17:00.212 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:00.214 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:00.229 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:00.331 -03:00 [INF] Executed ViewResult - view Index executed in 108.3022ms.
+2026-04-12 22:17:00.331 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 117.4449ms
+2026-04-12 22:17:00.331 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:00.334 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 200 null text/html; charset=utf-8 126.245ms
+2026-04-12 22:17:00.392 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 22:17:00.399 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:00.400 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:00.403 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:00.418 -03:00 [INF] Executed ViewResult - view Index executed in 15.2802ms.
+2026-04-12 22:17:00.418 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 18.1558ms
+2026-04-12 22:17:00.418 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:00.418 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 200 null text/html; charset=utf-8 31.947ms
+2026-04-12 22:17:05.638 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5212/Login - application/x-www-form-urlencoded 219
+2026-04-12 22:17:05.639 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:05.660 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:06.967 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__model_Email_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__model_Email_0
+LIMIT 1
+2026-04-12 22:17:07.250 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5212/Login - application/x-www-form-urlencoded 219
+2026-04-12 22:17:07.251 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:07.252 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:07.277 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__model_Email_0
+LIMIT 1
+2026-04-12 22:17:07.689 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:17:07.817 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 18), @p3='?' (Size = 4), @p4='?', @p5='?' (DbType = Int32), @p6='?' (Size = 60), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Ativo" = @p0, "DataCriacao" = @p1, "Email" = @p2, "Nome" = @p3, "Observacoes" = @p4, "Perfil" = @p5, "SenhaHash" = @p6, "TokenExpira" = @p7, "TokenRecuperacao" = @p8, "UltimaAtualizacao" = @p9, "UltimoLogin" = @p10
+WHERE "Id" = @p11
+RETURNING 1;
+2026-04-12 22:17:07.832 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-12 22:17:07.836 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-12 22:17:07.836 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-12 22:17:07.836 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 2176.1383ms
+2026-04-12 22:17:07.836 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:07.844 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5212/Login - 499 null null 2205.8002ms
+2026-04-12 22:17:07.864 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:17:07.865 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 18), @p3='?' (Size = 4), @p4='?', @p5='?' (DbType = Int32), @p6='?' (Size = 60), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Ativo" = @p0, "DataCriacao" = @p1, "Email" = @p2, "Nome" = @p3, "Observacoes" = @p4, "Perfil" = @p5, "SenhaHash" = @p6, "TokenExpira" = @p7, "TokenRecuperacao" = @p8, "UltimaAtualizacao" = @p9, "UltimoLogin" = @p10
+WHERE "Id" = @p11
+RETURNING 1;
+2026-04-12 22:17:07.866 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-12 22:17:07.866 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-12 22:17:07.867 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-12 22:17:07.867 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 615.0208ms
+2026-04-12 22:17:07.867 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:07.867 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5212/Login - 302 0 null 616.525ms
+2026-04-12 22:17:07.870 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:17:07.870 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:07.871 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:17:07.872 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:07.880 -03:00 [INF] Executed ViewResult - view Index executed in 8.219ms.
+2026-04-12 22:17:07.880 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 8.6461ms
+2026-04-12 22:17:07.880 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:07.880 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 10.6053ms
+2026-04-12 22:17:07.920 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:17:07.921 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:07.921 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:17:07.921 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:07.924 -03:00 [INF] Executed ViewResult - view Index executed in 2.6741ms.
+2026-04-12 22:17:07.925 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 3.9931ms
+2026-04-12 22:17:07.925 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:07.925 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 5.2442ms
+2026-04-12 22:17:09.199 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes - null null
+2026-04-12 22:17:09.204 -03:00 [INF] Executing endpoint 'MovimentacoesController.Index (StartStop)'
+2026-04-12 22:17:09.210 -03:00 [INF] Route matched with {action = "Index", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MovimentacoesController (StartStop).
+2026-04-12 22:17:09.370 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:17:09.455 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:09.472 -03:00 [INF] Executed ViewResult - view Index executed in 17.4208ms.
+2026-04-12 22:17:09.472 -03:00 [INF] Executed action MovimentacoesController.Index (StartStop) in 261.8899ms
+2026-04-12 22:17:09.472 -03:00 [INF] Executed endpoint 'MovimentacoesController.Index (StartStop)'
+2026-04-12 22:17:09.473 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes - 200 null text/html; charset=utf-8 273.4392ms
+2026-04-12 22:17:09.507 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Movimentacoes - null null
+2026-04-12 22:17:09.509 -03:00 [INF] Executing endpoint 'MovimentacoesController.Index (StartStop)'
+2026-04-12 22:17:09.509 -03:00 [INF] Route matched with {action = "Index", controller = "Movimentacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MovimentacoesController (StartStop).
+2026-04-12 22:17:09.511 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status", "m0"."Telefone", "m0"."UsuarioId", "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status"
+FROM "Movimentacoes" AS "m"
+INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+INNER JOIN "Veiculos" AS "v" ON "m"."VeiculoId" = "v"."Id"
+ORDER BY "m"."DataRetirada" DESC
+2026-04-12 22:17:09.514 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:09.516 -03:00 [INF] Executed ViewResult - view Index executed in 2.8333ms.
+2026-04-12 22:17:09.516 -03:00 [INF] Executed action MovimentacoesController.Index (StartStop) in 6.9483ms
+2026-04-12 22:17:09.516 -03:00 [INF] Executed endpoint 'MovimentacoesController.Index (StartStop)'
+2026-04-12 22:17:09.517 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Movimentacoes - 200 null text/html; charset=utf-8 9.419ms
+2026-04-12 22:17:11.131 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:17:11.132 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:11.132 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:17:11.132 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:11.133 -03:00 [INF] Executed ViewResult - view Index executed in 1.0262ms.
+2026-04-12 22:17:11.133 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 1.1694ms
+2026-04-12 22:17:11.133 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:11.133 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 1.9117ms
+2026-04-12 22:17:11.174 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:17:11.176 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:11.176 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:17:11.176 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:11.178 -03:00 [INF] Executed ViewResult - view Index executed in 2.1816ms.
+2026-04-12 22:17:11.178 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 2.4824ms
+2026-04-12 22:17:11.178 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:11.179 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 4.2345ms
+2026-04-12 22:17:12.439 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Dashboard - null null
+2026-04-12 22:17:12.442 -03:00 [INF] Executing endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:17:12.447 -03:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.DashboardController (StartStop).
+2026-04-12 22:17:12.463 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:17:12.535 -03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2026-04-12 22:17:12.547 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status", "t"."Id", "t"."DataFim", "t"."DataInicio", "t"."Status", "t"."UsuarioId", "t"."VeiculoId", "t"."Id0", "t"."Ativo", "t"."DataCriacao", "t"."Email", "t"."Nome", "t"."Observacoes", "t"."Perfil", "t"."SenhaHash", "t"."TokenExpira", "t"."TokenRecuperacao", "t"."UltimaAtualizacao", "t"."UltimoLogin", "t0"."Id", "t0"."DataRetirada", "t0"."DataRetorno", "t0"."Destino", "t0"."KmPercorrido", "t0"."KmRetorno", "t0"."KmSaida", "t0"."MotivoCancelamento", "t0"."MotoristaId", "t0"."Status", "t0"."TempoPosse", "t0"."TipoMovimentacao", "t0"."VeiculoId", "t0"."Id0", "t0"."Area", "t0"."Ativo", "t0"."Email", "t0"."Empregado", "t0"."Nome", "t0"."Status0", "t0"."Telefone", "t0"."UsuarioId"
+FROM "Veiculos" AS "v"
+LEFT JOIN (
+    SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId", "u"."Id" AS "Id0", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+    FROM "Reservas" AS "r"
+    INNER JOIN "Usuarios" AS "u" ON "r"."UsuarioId" = "u"."Id"
+) AS "t" ON "v"."Id" = "t"."VeiculoId"
+LEFT JOIN (
+    SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id" AS "Id0", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status" AS "Status0", "m0"."Telefone", "m0"."UsuarioId"
+    FROM "Movimentacoes" AS "m"
+    INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+) AS "t0" ON "v"."Id" = "t0"."VeiculoId"
+ORDER BY "v"."Id", "t"."Id", "t"."Id0", "t0"."Id"
+2026-04-12 22:17:12.592 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.594 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.595 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.595 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.649 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:12.689 -03:00 [INF] Executed ViewResult - view Index executed in 40.7163ms.
+2026-04-12 22:17:12.689 -03:00 [INF] Executed action StartStop.Controllers.DashboardController.Index (StartStop) in 241.8965ms
+2026-04-12 22:17:12.689 -03:00 [INF] Executed endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:17:12.689 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Dashboard - 200 null text/html; charset=utf-8 249.6708ms
+2026-04-12 22:17:12.726 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Dashboard - null null
+2026-04-12 22:17:12.726 -03:00 [INF] Executing endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:17:12.726 -03:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller StartStop.Controllers.DashboardController (StartStop).
+2026-04-12 22:17:12.728 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId"
+FROM "Reservas" AS "r"
+WHERE "r"."Status" = 'Ativa' AND "r"."DataFim" <= rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', 'now', 'localtime'), '0'), '.')
+2026-04-12 22:17:12.730 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Bloqueado", "v"."DataFim", "v"."DataInicio", "v"."KmAcumulado", "v"."Oficina", "v"."Placa", "v"."Status", "t"."Id", "t"."DataFim", "t"."DataInicio", "t"."Status", "t"."UsuarioId", "t"."VeiculoId", "t"."Id0", "t"."Ativo", "t"."DataCriacao", "t"."Email", "t"."Nome", "t"."Observacoes", "t"."Perfil", "t"."SenhaHash", "t"."TokenExpira", "t"."TokenRecuperacao", "t"."UltimaAtualizacao", "t"."UltimoLogin", "t0"."Id", "t0"."DataRetirada", "t0"."DataRetorno", "t0"."Destino", "t0"."KmPercorrido", "t0"."KmRetorno", "t0"."KmSaida", "t0"."MotivoCancelamento", "t0"."MotoristaId", "t0"."Status", "t0"."TempoPosse", "t0"."TipoMovimentacao", "t0"."VeiculoId", "t0"."Id0", "t0"."Area", "t0"."Ativo", "t0"."Email", "t0"."Empregado", "t0"."Nome", "t0"."Status0", "t0"."Telefone", "t0"."UsuarioId"
+FROM "Veiculos" AS "v"
+LEFT JOIN (
+    SELECT "r"."Id", "r"."DataFim", "r"."DataInicio", "r"."Status", "r"."UsuarioId", "r"."VeiculoId", "u"."Id" AS "Id0", "u"."Ativo", "u"."DataCriacao", "u"."Email", "u"."Nome", "u"."Observacoes", "u"."Perfil", "u"."SenhaHash", "u"."TokenExpira", "u"."TokenRecuperacao", "u"."UltimaAtualizacao", "u"."UltimoLogin"
+    FROM "Reservas" AS "r"
+    INNER JOIN "Usuarios" AS "u" ON "r"."UsuarioId" = "u"."Id"
+) AS "t" ON "v"."Id" = "t"."VeiculoId"
+LEFT JOIN (
+    SELECT "m"."Id", "m"."DataRetirada", "m"."DataRetorno", "m"."Destino", "m"."KmPercorrido", "m"."KmRetorno", "m"."KmSaida", "m"."MotivoCancelamento", "m"."MotoristaId", "m"."Status", "m"."TempoPosse", "m"."TipoMovimentacao", "m"."VeiculoId", "m0"."Id" AS "Id0", "m0"."Area", "m0"."Ativo", "m0"."Email", "m0"."Empregado", "m0"."Nome", "m0"."Status" AS "Status0", "m0"."Telefone", "m0"."UsuarioId"
+    FROM "Movimentacoes" AS "m"
+    INNER JOIN "Motoristas" AS "m0" ON "m"."MotoristaId" = "m0"."Id"
+) AS "t0" ON "v"."Id" = "t0"."VeiculoId"
+ORDER BY "v"."Id", "t"."Id", "t"."Id0", "t0"."Id"
+2026-04-12 22:17:12.736 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.737 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.738 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.738 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__v_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."DataFim"
+FROM "Manutencoes" AS "m"
+WHERE "m"."VeiculoId" = @__v_Id_0
+ORDER BY "m"."DataFim" DESC
+LIMIT 1
+2026-04-12 22:17:12.739 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:12.741 -03:00 [INF] Executed ViewResult - view Index executed in 2.3433ms.
+2026-04-12 22:17:12.741 -03:00 [INF] Executed action StartStop.Controllers.DashboardController.Index (StartStop) in 14.4292ms
+2026-04-12 22:17:12.741 -03:00 [INF] Executed endpoint 'StartStop.Controllers.DashboardController.Index (StartStop)'
+2026-04-12 22:17:12.741 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Dashboard - 200 null text/html; charset=utf-8 15.3058ms
+2026-04-12 22:17:14.849 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:17:14.850 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:14.850 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:17:14.850 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:14.851 -03:00 [INF] Executed ViewResult - view Index executed in 0.6728ms.
+2026-04-12 22:17:14.851 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 0.8554ms
+2026-04-12 22:17:14.851 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:14.851 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 1.4651ms
+2026-04-12 22:17:14.888 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/ - null null
+2026-04-12 22:17:14.889 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:14.890 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.HomeController (StartStop).
+2026-04-12 22:17:14.890 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:14.891 -03:00 [INF] Executed ViewResult - view Index executed in 1.1314ms.
+2026-04-12 22:17:14.891 -03:00 [INF] Executed action StartStop.Controllers.HomeController.Index (StartStop) in 1.3865ms
+2026-04-12 22:17:14.891 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HomeController.Index (StartStop)'
+2026-04-12 22:17:14.891 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/ - 200 null text/html; charset=utf-8 2.9075ms
+2026-04-12 22:17:22.338 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login/Logout - null null
+2026-04-12 22:17:22.340 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Logout (StartStop)'
+2026-04-12 22:17:22.340 -03:00 [INF] Route matched with {action = "Logout", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:22.340 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-12 22:17:22.340 -03:00 [INF] Executing RedirectResult, redirecting to /Login.
+2026-04-12 22:17:22.340 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Logout (StartStop) in 0.6877ms
+2026-04-12 22:17:22.341 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Logout (StartStop)'
+2026-04-12 22:17:22.341 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login/Logout - 302 0 null 2.5683ms
+2026-04-12 22:17:22.348 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 22:17:22.348 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:22.348 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:22.349 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:22.350 -03:00 [INF] Executed ViewResult - view Index executed in 1.5655ms.
+2026-04-12 22:17:22.350 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 1.8625ms
+2026-04-12 22:17:22.350 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:22.350 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 200 null text/html; charset=utf-8 2.3671ms
+2026-04-12 22:17:22.387 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5212/Login - null null
+2026-04-12 22:17:22.387 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:22.387 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-12 22:17:22.388 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-12 22:17:22.390 -03:00 [INF] Executed ViewResult - view Index executed in 1.7082ms.
+2026-04-12 22:17:22.390 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 2.455ms
+2026-04-12 22:17:22.391 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-12 22:17:22.391 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5212/Login - 200 null text/html; charset=utf-8 4.0055ms

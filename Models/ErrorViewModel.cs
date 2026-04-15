@@ -1,8 +1,10 @@
-namespace StartStop.Models;
-
-public class ErrorViewModel
+namespace StartStop.Models
 {
-    public string? RequestId { get; set; }
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
 
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        // ✅ Propriedade calculada para exibir se há RequestId
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }

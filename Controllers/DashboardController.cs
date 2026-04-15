@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 namespace StartStop.Controllers
 {
     [Authorize(Roles = "Administrador,Motorista,Tecnico,PCO")]
-
     public class DashboardController : Controller
     {
         private readonly StartStopContext _context;
@@ -56,9 +55,9 @@ namespace StartStop.Controllers
                     .OrderByDescending(r => r.DataFim)
                     .FirstOrDefault();
 
-                // Movimentação ativa
+                // Movimentação ativa (retirada em andamento)
                 var movimentacaoAtiva = v.Movimentacoes
-                    .Where(m => m.Status == "Pendente" || m.Status == "Indisponível")
+                    .Where(m => m.Status == "Pendente")
                     .OrderByDescending(m => m.DataRetirada)
                     .FirstOrDefault();
 
@@ -75,7 +74,7 @@ namespace StartStop.Controllers
                     Placa = v.Placa,
                     Status = v.Status,
 
-                    // Dados da reserva (sempre mantém se existir)
+                    // Dados da reserva
                     ReservaId = reservaAtiva?.Id,
                     UsuarioNome = reservaAtiva?.Usuario?.Nome,
                     DataInicio = reservaAtiva?.DataInicio,
@@ -90,17 +89,19 @@ namespace StartStop.Controllers
                     // Dados de manutenção
                     DataFimManutencao = dataFimManutencao,
 
-                    // Tipo de indisponibilidade: movimentação tem prioridade, mas reserva continua registrada
+                    // Tipo de indisponibilidade
                     TipoIndisponibilidade = movimentacaoAtiva != null ? "Retirada"
                                         : reservaAtiva != null ? "Reserva"
                                         : null
                 };
             }).ToList();
 
+            // Resumo estatístico
             ViewBag.Total = veiculos.Count;
             ViewBag.Disponiveis = veiculos.Count(v => v.Status == "Disponível");
             ViewBag.Indisponiveis = veiculos.Count(v => v.Status == "Indisponível");
             ViewBag.Bloqueados = veiculos.Count(v => v.Status == "Bloqueado");
+            ViewBag.Reservados = veiculos.Count(v => v.Status == "Reservado");
 
             return View(veiculos);
         }

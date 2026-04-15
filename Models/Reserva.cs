@@ -3,36 +3,35 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using StartStop.Models;
 
-
-public class Reserva
+namespace StartStop.Models
 {
-    [Key]
-    public int Id { get; set; }
+    public class Reserva
+    {
+        [Key]
+        public int Id { get; set; }
 
-    [Required]
-    public int VeiculoId { get; set; }
+        [Required]
+        public int VeiculoId { get; set; }
 
-    [ForeignKey("VeiculoId")]
-    public Veiculo Veiculo { get; set; }
+        [ForeignKey("VeiculoId")]
+        public Veiculo Veiculo { get; set; } = null!;
 
-    [Required]
-    public int UsuarioId { get; set; }
+        [Required]
+        public int UsuarioId { get; set; }
 
-    [ForeignKey("UsuarioId")]
-    public Usuario Usuario { get; set; }
+        [ForeignKey("UsuarioId")]
+        public Usuario Usuario { get; set; } = null!;
 
-    [Required]
-    [DataType(DataType.DateTime)]
-    public DateTime DataInicio { get; set; }   // Dia e hora de início
+        [Required]
+        [Column(TypeName = "datetime")]
+        public DateTime DataInicio { get; set; }   // Dia e hora de início
 
-    [Required]
-    [DataType(DataType.DateTime)]
-    public DateTime DataFim { get; set; }      // Dia e hora de término
+        [Required]
+        [Column(TypeName = "datetime")]
+        public DateTime DataFim { get; set; }      // Dia e hora de término
 
-    [Required]
-    [StringLength(20)]
-    public string Status { get; set; } // Ativa, Finalizada, Cancelada
-
- 
-    
+        [Required]
+        [StringLength(20)]
+        public string Status { get; set; } = "Ativa"; // Ativa, Finalizada, Cancelada
+    }
 }

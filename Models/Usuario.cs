@@ -21,13 +21,15 @@ namespace StartStop.Models
 
     public class Usuario
     {
-        public int Id { get; set; } // PK da tabela Usuarios
+        public int Id { get; set; } // PK
 
         [Required(ErrorMessage = "O campo Nome é obrigatório.")]
+        [StringLength(100)]
         public string Nome { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "O campo Email é obrigatório.")]
         [EmailAddress(ErrorMessage = "Digite um email válido.")]
+        [StringLength(150)]
         public string Email { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "O campo Perfil é obrigatório.")]
@@ -36,23 +38,34 @@ namespace StartStop.Models
         // Navegação
         public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 
+        [StringLength(255)]
         public string? SenhaHash { get; set; }
 
         [NotMapped]
         [DataType(DataType.Password)]
         public string Senha { get; set; } = string.Empty;
 
+        [Column(TypeName = "datetime")]
         public DateTime DataCriacao { get; set; } = DateTime.Now;
+
+        [Column(TypeName = "datetime")]
         public DateTime? UltimaAtualizacao { get; set; }
+
+        [Column(TypeName = "datetime")]
         public DateTime? UltimoLogin { get; set; }
+
         public bool Ativo { get; set; } = true;
+
         public string? Observacoes { get; set; }
 
         // 🔑 Relacionamento 1:N com Motoristas
         public ICollection<Motorista> Motoristas { get; set; } = new List<Motorista>();
 
-        // 🔑 Campos para recuperação de senha
+        // 🔑 Recuperação de senha
+        [StringLength(255)]
         public string? TokenRecuperacao { get; set; }
+
+        [Column(TypeName = "datetime")]
         public DateTime? TokenExpira { get; set; }
     }
 }
