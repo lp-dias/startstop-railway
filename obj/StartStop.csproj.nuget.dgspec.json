@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\StartStop\\StartStop.csproj": {}
+    "C:\\projetos\\startstop\\StartStop.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\StartStop\\StartStop.csproj": {
+    "C:\\projetos\\startstop\\StartStop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\StartStop\\StartStop.csproj",
+        "projectUniqueName": "C:\\projetos\\startstop\\StartStop.csproj",
         "projectName": "StartStop",
-        "projectPath": "C:\\Projetos\\StartStop\\StartStop.csproj",
+        "projectPath": "C:\\projetos\\startstop\\StartStop.csproj",
         "packagesPath": "C:\\Users\\lpdia\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\StartStop\\obj\\",
+        "outputPath": "C:\\projetos\\startstop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lpdia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,6 +50,12 @@
             "MailKit": {
               "target": "Package",
               "version": "[4.15.1, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",

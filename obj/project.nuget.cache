@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ojMN/HW6Vw=",
+  "dgSpecHash": "azwD2zyW2cc=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\StartStop\\StartStop.csproj",
+  "projectFilePath": "C:\\projetos\\startstop\\StartStop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lpdia\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\lpdia\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",

@@ -17,12 +17,17 @@ builder.Host.UseSerilog();
 
 builder.Services.AddControllersWithViews();
 
-// Banco de dados MySQL
+// 🔹 Conexão MySQL (Railway ou local)
+var host = Environment.GetEnvironmentVariable("MYSQLHOST") ?? "localhost";
+var portDb = Environment.GetEnvironmentVariable("MYSQLPORT") ?? "3306";
+var user = Environment.GetEnvironmentVariable("MYSQLUSER") ?? "root";
+var password = Environment.GetEnvironmentVariable("MYSQLPASSWORD") ?? "alemanci"; // senha local
+var database = Environment.GetEnvironmentVariable("MYSQLDATABASE") ?? "startstop";
+
+var connectionString = $"Server={host};Port={portDb};Database={database};Uid={user};Pwd={password};";
+
 builder.Services.AddDbContext<StartStopContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 46)) // ajuste conforme versão
-    ));
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // Autenticação por cookie
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -54,7 +59,7 @@ builder.Services.AddSingleton<EmailService>(sp =>
 
 var app = builder.Build();
 
-// 🔹 Aplica migrations automaticamente ao subir
+// 🔹 Aplica migrations automaticamente
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<StartStopContext>();
@@ -77,7 +82,7 @@ app.UseStatusCodePages(context =>
     return Task.CompletedTask;
 });
 
-// 🔹 Rota inicial para evitar 404
+// 🔹 Rota inicial
 app.MapGet("/", () => "API StartStop rodando no Railway!");
 
 // Rotas padrão MVC
@@ -85,10 +90,11 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-
-// 🔹 Ajuste da porta para Railway
-    var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
-app.Urls.Add($"http://0.0.0.0:{port}");
-
+// 🔹 Ajuste da porta do Railway
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+app.Urls.Add($"http://*:{port}");
 
 app.Run();
+
+
+

@@ -9,3 +9,724 @@ ORDER BY `MigrationId`;
 2026-04-15 13:01:38.626 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
 2026-04-15 13:01:38.689 -03:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 14:41:03.885 -03:00 [ERR] An error occurred using the connection to database '' on server ''.
+2026-04-15 14:54:25.739 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 14:54:25.773 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 14:54:25.787 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 14:54:25.804 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 14:54:25.850 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:04:31.461 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:04:31.499 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:04:31.514 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:04:31.531 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:04:31.581 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:05:07.833 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:05:07.894 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:05:07.917 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:05:07.944 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:05:08.023 -03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:13:24.273 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:13:24.311 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:13:24.327 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:13:24.346 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:13:24.396 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:15:17.796 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:15:17.834 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:15:17.849 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:15:17.865 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:15:17.911 -03:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:17:23.663 -03:00 [INF] Executed DbCommand (131ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `startstop`;
+2026-04-15 15:17:36.922 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `startstop`;
+2026-04-15 15:17:37.049 -03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:17:37.069 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:17:37.073 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:17:37.085 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:17:37.107 -03:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:18:57.253 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:18:57.296 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:19:38.541 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:19:38.577 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:19:38.592 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:19:38.603 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:19:38.650 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:20:56.195 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:20:56.246 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:20:56.267 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:20:56.283 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:20:56.351 -03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:21:26.675 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:21:26.727 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:22:40.734 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:22:40.781 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:22:40.800 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:22:40.812 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:22:40.865 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:23:02.205 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:23:02.240 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:23:02.256 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:23:02.274 -03:00 [INF] Applying migration '20260410194743_AddCamposBloqueioVeiculos'.
+2026-04-15 15:23:02.322 -03:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Veiculos` ADD `Bloqueado` INTEGER NOT NULL DEFAULT FALSE;
+2026-04-15 15:23:23.358 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:23:23.394 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:23:44.863 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:23:44.899 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:23:53.973 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:23:54.006 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:24:02.838 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:24:02.873 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:24:14.463 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:24:14.497 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:24:24.926 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:24:24.959 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:24:33.960 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:24:33.996 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:24:42.537 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:24:42.573 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:24:51.255 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:24:51.292 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:25:45.308 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:25:45.341 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:25:45.356 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:25:45.366 -03:00 [INF] Applying migration '20260415182528_InitialCreate'.
+2026-04-15 15:25:45.433 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2026-04-15 15:25:45.446 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Usuarios` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Nome` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `Email` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `Perfil` int NOT NULL,
+    `SenhaHash` varchar(255) CHARACTER SET utf8mb4 NULL,
+    `DataCriacao` datetime NOT NULL,
+    `UltimaAtualizacao` datetime NULL,
+    `UltimoLogin` datetime NULL,
+    `Ativo` tinyint(1) NOT NULL,
+    `Observacoes` longtext CHARACTER SET utf8mb4 NULL,
+    `TokenRecuperacao` varchar(255) CHARACTER SET utf8mb4 NULL,
+    `TokenExpira` datetime NULL,
+    CONSTRAINT `PK_Usuarios` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.458 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Veiculos` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Placa` varchar(10) CHARACTER SET utf8mb4 NOT NULL,
+    `Status` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `KmAcumulado` int NOT NULL,
+    `Bloqueado` tinyint(1) NOT NULL,
+    `DataInicio` datetime NULL,
+    `DataFim` datetime NULL,
+    `Oficina` varchar(100) CHARACTER SET utf8mb4 NULL,
+    CONSTRAINT `PK_Veiculos` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.487 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Motoristas` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Nome` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `Status` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+    `Area` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `Email` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `Telefone` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+    `Ativo` tinyint(1) NOT NULL,
+    `Empregado` tinyint(1) NOT NULL,
+    `UsuarioId` int NOT NULL,
+    CONSTRAINT `PK_Motoristas` PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Motoristas_Usuarios_UsuarioId` FOREIGN KEY (`UsuarioId`) REFERENCES `Usuarios` (`Id`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.517 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Manutencoes` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `VeiculoId` int NOT NULL,
+    `Bloqueado` tinyint(1) NOT NULL,
+    `DataInicio` datetime NULL,
+    `DataFim` datetime NULL,
+    `Tipo` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `Custo` decimal(10,2) NULL,
+    `Observacoes` varchar(500) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Manutencoes` PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Manutencoes_Veiculos_VeiculoId` FOREIGN KEY (`VeiculoId`) REFERENCES `Veiculos` (`Id`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.549 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Reservas` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `VeiculoId` int NOT NULL,
+    `UsuarioId` int NOT NULL,
+    `DataInicio` datetime NOT NULL,
+    `DataFim` datetime NOT NULL,
+    `Status` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Reservas` PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Reservas_Usuarios_UsuarioId` FOREIGN KEY (`UsuarioId`) REFERENCES `Usuarios` (`Id`) ON DELETE RESTRICT,
+    CONSTRAINT `FK_Reservas_Veiculos_VeiculoId` FOREIGN KEY (`VeiculoId`) REFERENCES `Veiculos` (`Id`) ON DELETE RESTRICT
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.585 -03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Movimentacoes` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `MotoristaId` int NOT NULL,
+    `VeiculoId` int NOT NULL,
+    `DataRetirada` datetime NOT NULL,
+    `DataRetorno` datetime NULL,
+    `Destino` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `KmSaida` int NOT NULL,
+    `KmRetorno` int NULL,
+    `MotivoCancelamento` longtext CHARACTER SET utf8mb4 NULL,
+    `TipoMovimentacao` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+    `Status` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+    `KmPercorrido` int NULL,
+    `TempoPosse` int NULL,
+    CONSTRAINT `PK_Movimentacoes` PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Movimentacoes_Motoristas_MotoristaId` FOREIGN KEY (`MotoristaId`) REFERENCES `Motoristas` (`Id`) ON DELETE CASCADE,
+    CONSTRAINT `FK_Movimentacoes_Veiculos_VeiculoId` FOREIGN KEY (`VeiculoId`) REFERENCES `Veiculos` (`Id`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.616 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Logs` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `MovimentacaoId` int NOT NULL,
+    `DataCancelamento` datetime NOT NULL,
+    `Motivo` varchar(200) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Logs` PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Logs_Movimentacoes_MovimentacaoId` FOREIGN KEY (`MovimentacaoId`) REFERENCES `Movimentacoes` (`Id`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2026-04-15 15:25:45.635 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Logs_MovimentacaoId` ON `Logs` (`MovimentacaoId`);
+2026-04-15 15:25:45.650 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Manutencoes_VeiculoId` ON `Manutencoes` (`VeiculoId`);
+2026-04-15 15:25:45.673 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Motoristas_UsuarioId` ON `Motoristas` (`UsuarioId`);
+2026-04-15 15:25:45.694 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Movimentacoes_MotoristaId` ON `Movimentacoes` (`MotoristaId`);
+2026-04-15 15:25:45.711 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Movimentacoes_VeiculoId` ON `Movimentacoes` (`VeiculoId`);
+2026-04-15 15:25:45.727 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Reservas_UsuarioId` ON `Reservas` (`UsuarioId`);
+2026-04-15 15:25:45.741 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Reservas_VeiculoId` ON `Reservas` (`VeiculoId`);
+2026-04-15 15:25:45.744 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20260415182528_InitialCreate', '8.0.5');
+2026-04-15 15:26:18.952 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:26:18.987 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:26:19.003 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:26:19.018 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-04-15 15:26:19.081 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-15 15:26:19.134 -03:00 [INF] Now listening on: http://localhost:5000
+2026-04-15 15:26:19.136 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-15 15:26:19.136 -03:00 [INF] Hosting environment: Development
+2026-04-15 15:26:19.136 -03:00 [INF] Content root path: C:\projetos\startstop
+2026-04-15 15:26:25.924 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 15:26:25.966 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 15:26:25.970 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 15:26:25.971 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 49.809ms
+2026-04-15 15:26:26.090 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-04-15 15:26:26.111 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\projetos\startstop\wwwroot\favicon.ico'
+2026-04-15 15:26:26.112 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 200 5430 image/x-icon 21.5951ms
+2026-04-15 15:26:26.937 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 15:26:26.940 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 15:26:26.941 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 15:26:26.941 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 3.3217ms
+2026-04-15 15:27:16.822 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/movimentacoes - null null
+2026-04-15 15:27:16.833 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-15 15:27:16.840 -03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-04-15 15:27:16.840 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/movimentacoes - 302 0 null 17.9782ms
+2026-04-15 15:27:16.845 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2Fmovimentacoes - null null
+2026-04-15 15:27:16.847 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:16.866 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 15:27:16.887 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 15:27:17.032 -03:00 [INF] Executed ViewResult - view Index executed in 148.3675ms.
+2026-04-15 15:27:17.033 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 164.441ms
+2026-04-15 15:27:17.033 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:17.036 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2Fmovimentacoes - 200 null text/html; charset=utf-8 190.6819ms
+2026-04-15 15:27:17.068 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-04-15 15:27:17.071 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\projetos\startstop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-04-15 15:27:17.071 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.min.css - 200 232803 text/css 3.4564ms
+2026-04-15 15:27:17.075 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css - null null
+2026-04-15 15:27:17.076 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-04-15 15:27:17.077 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-04-15 15:27:17.078 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\projetos\startstop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-04-15 15:27:17.078 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80721 text/javascript 1.6927ms
+2026-04-15 15:27:17.078 -03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\projetos\startstop\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2026-04-15 15:27:17.078 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.min.js - 200 25308 text/javascript 1.1149ms
+2026-04-15 15:27:17.079 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-04-15 15:27:17.080 -03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\projetos\startstop\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js'
+2026-04-15 15:27:17.080 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5824 text/javascript 0.9964ms
+2026-04-15 15:27:17.090 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\projetos\startstop\wwwroot\css\site.css'
+2026-04-15 15:27:17.090 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/css/site.css - 200 667 text/css 14.9411ms
+2026-04-15 15:27:35.373 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/veiculos - null null
+2026-04-15 15:27:35.376 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-15 15:27:35.377 -03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-04-15 15:27:35.377 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/veiculos - 302 0 null 4.5141ms
+2026-04-15 15:27:35.388 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2Fveiculos - null null
+2026-04-15 15:27:35.389 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:35.390 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 15:27:35.393 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 15:27:35.407 -03:00 [INF] Executed ViewResult - view Index executed in 13.7549ms.
+2026-04-15 15:27:35.407 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 17.0413ms
+2026-04-15 15:27:35.407 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:35.407 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2Fveiculos - 200 null text/html; charset=utf-8 19.7859ms
+2026-04-15 15:27:48.126 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login - application/x-www-form-urlencoded 220
+2026-04-15 15:27:48.126 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:48.141 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 15:27:48.605 -03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__model_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__model_Email_0
+LIMIT 1
+2026-04-15 15:27:48.621 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 15:27:48.623 -03:00 [INF] Executed ViewResult - view Index executed in 2.5321ms.
+2026-04-15 15:27:48.624 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 483.0938ms
+2026-04-15 15:27:48.624 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:48.629 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login - 200 null text/html; charset=utf-8 503.5838ms
+2026-04-15 15:27:59.370 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login - application/x-www-form-urlencoded 220
+2026-04-15 15:27:59.371 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:59.371 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 15:27:59.447 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__model_Email_0
+LIMIT 1
+2026-04-15 15:27:59.448 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 15:27:59.449 -03:00 [INF] Executed ViewResult - view Index executed in 1.6135ms.
+2026-04-15 15:27:59.449 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 78.5039ms
+2026-04-15 15:27:59.449 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:27:59.450 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login - 200 null text/html; charset=utf-8 79.2279ms
+2026-04-15 15:29:19.593 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Dashboard - null null
+2026-04-15 15:29:19.596 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrador|Motorista|Tecnico|PCO)
+2026-04-15 15:29:19.597 -03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-04-15 15:29:19.597 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Dashboard - 302 0 null 4.3078ms
+2026-04-15 15:29:19.603 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2FDashboard - null null
+2026-04-15 15:29:19.603 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:29:19.603 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 15:29:19.604 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 15:29:19.608 -03:00 [INF] Executed ViewResult - view Index executed in 3.7565ms.
+2026-04-15 15:29:19.608 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 4.5092ms
+2026-04-15 15:29:19.608 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:29:19.608 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2FDashboard - 200 null text/html; charset=utf-8 5.4502ms
+2026-04-15 15:29:26.206 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login - application/x-www-form-urlencoded 220
+2026-04-15 15:29:26.207 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:29:26.207 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 15:29:26.212 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__model_Email_0
+LIMIT 1
+2026-04-15 15:29:26.213 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 15:29:26.214 -03:00 [INF] Executed ViewResult - view Index executed in 1.0691ms.
+2026-04-15 15:29:26.214 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 6.9929ms
+2026-04-15 15:29:26.214 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 15:29:26.214 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login - 200 null text/html; charset=utf-8 7.6272ms
+2026-04-15 15:30:09.649 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 15:30:09.650 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 15:30:09.650 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 15:30:09.650 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 0.5221ms
+2026-04-15 15:47:09.919 -03:00 [INF] Application is shutting down...
+2026-04-15 15:57:22.641 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:57:22.678 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 15:57:22.692 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 15:57:22.708 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-04-15 15:57:22.774 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-15 15:57:22.824 -03:00 [INF] Now listening on: http://localhost:5000
+2026-04-15 15:57:22.826 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-15 15:57:22.826 -03:00 [INF] Hosting environment: Development
+2026-04-15 15:57:22.826 -03:00 [INF] Content root path: C:\projetos\startstop
+2026-04-15 15:57:36.456 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hash/123456 - null null
+2026-04-15 15:57:36.501 -03:00 [INF] Executing endpoint 'StartStop.Controllers.HashController.GerarHash (StartStop)'
+2026-04-15 15:57:36.528 -03:00 [INF] Route matched with {action = "GerarHash", controller = "Hash"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GerarHash(System.String) on controller StartStop.Controllers.HashController (StartStop).
+2026-04-15 15:57:37.190 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-04-15 15:57:37.200 -03:00 [INF] Executed action StartStop.Controllers.HashController.GerarHash (StartStop) in 665.8856ms
+2026-04-15 15:57:37.202 -03:00 [INF] Executed endpoint 'StartStop.Controllers.HashController.GerarHash (StartStop)'
+2026-04-15 15:57:37.204 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hash/123456 - 200 null text/plain; charset=utf-8 749.3834ms
+2026-04-15 16:01:10.901 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/EsqueciSenha - null null
+2026-04-15 16:01:10.904 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.EsqueciSenha (StartStop)'
+2026-04-15 16:01:10.910 -03:00 [INF] Route matched with {action = "EsqueciSenha", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EsqueciSenha() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:01:10.923 -03:00 [INF] Executing ViewResult, running view EsqueciSenha.
+2026-04-15 16:01:11.000 -03:00 [INF] Executed ViewResult - view EsqueciSenha executed in 79.996ms.
+2026-04-15 16:01:11.000 -03:00 [INF] Executed action StartStop.Controllers.LoginController.EsqueciSenha (StartStop) in 89.5947ms
+2026-04-15 16:01:11.000 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.EsqueciSenha (StartStop)'
+2026-04-15 16:01:11.004 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/EsqueciSenha - 200 null text/html; charset=utf-8 102.7245ms
+2026-04-15 16:01:13.758 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login/EsqueciSenha - application/x-www-form-urlencoded 208
+2026-04-15 16:01:13.762 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.EsqueciSenha (StartStop)'
+2026-04-15 16:01:13.769 -03:00 [INF] Route matched with {action = "EsqueciSenha", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EsqueciSenha(System.String) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:01:14.173 -03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__email_0
+LIMIT 1
+2026-04-15 16:01:14.412 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 150), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 255), @p7='?' (DbType = DateTime), @p8='?' (Size = 255), @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Usuarios` SET `Ativo` = @p0, `DataCriacao` = @p1, `Email` = @p2, `Nome` = @p3, `Observacoes` = @p4, `Perfil` = @p5, `SenhaHash` = @p6, `TokenExpira` = @p7, `TokenRecuperacao` = @p8, `UltimaAtualizacao` = @p9, `UltimoLogin` = @p10
+WHERE `Id` = @p11;
+SELECT ROW_COUNT();
+2026-04-15 16:01:41.336 -03:00 [INF] Executing RedirectResult, redirecting to /Login.
+2026-04-15 16:01:41.355 -03:00 [INF] Executed action StartStop.Controllers.LoginController.EsqueciSenha (StartStop) in 27585.1424ms
+2026-04-15 16:01:41.356 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.EsqueciSenha (StartStop)'
+2026-04-15 16:01:41.364 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login/EsqueciSenha - 302 0 null 27605.3427ms
+2026-04-15 16:01:41.367 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 16:01:41.367 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:01:41.370 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:01:41.372 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 16:01:41.421 -03:00 [INF] Executed ViewResult - view Index executed in 50.3596ms.
+2026-04-15 16:01:41.421 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 51.1857ms
+2026-04-15 16:01:41.421 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:01:41.421 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 54.2017ms
+2026-04-15 16:02:03.637 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/RedefinirSenha?token=19414e21-8169-47b6-9264-b4f675f69a23 - null null
+2026-04-15 16:02:03.637 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.RedefinirSenha (StartStop)'
+2026-04-15 16:02:03.641 -03:00 [INF] Route matched with {action = "RedefinirSenha", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RedefinirSenha(System.String) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:02:03.754 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__token_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE (`u`.`TokenRecuperacao` = @__token_0) AND (`u`.`TokenExpira` > CURRENT_TIMESTAMP())
+LIMIT 1
+2026-04-15 16:02:03.755 -03:00 [INF] Executing ViewResult, running view RedefinirSenha.
+2026-04-15 16:02:03.766 -03:00 [INF] Executed ViewResult - view RedefinirSenha executed in 10.839ms.
+2026-04-15 16:02:03.766 -03:00 [INF] Executed action StartStop.Controllers.LoginController.RedefinirSenha (StartStop) in 125.0933ms
+2026-04-15 16:02:03.766 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.RedefinirSenha (StartStop)'
+2026-04-15 16:02:03.766 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/RedefinirSenha?token=19414e21-8169-47b6-9264-b4f675f69a23 - 200 null text/html; charset=utf-8 129.214ms
+2026-04-15 16:02:03.778 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-04-15 16:02:03.780 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css - null null
+2026-04-15 16:02:03.781 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-04-15 16:02:03.790 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\projetos\startstop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-04-15 16:02:03.791 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\projetos\startstop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-04-15 16:02:03.791 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.min.css - 200 232803 text/css 12.2122ms
+2026-04-15 16:02:03.791 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80721 text/javascript 9.4791ms
+2026-04-15 16:02:03.791 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\projetos\startstop\wwwroot\css\site.css'
+2026-04-15 16:02:03.791 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/css/site.css - 200 667 text/css 10.7364ms
+2026-04-15 16:02:03.828 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/RedefinirSenha?token=19414e21-8169-47b6-9264-b4f675f69a23 - null null
+2026-04-15 16:02:03.829 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.RedefinirSenha (StartStop)'
+2026-04-15 16:02:03.829 -03:00 [INF] Route matched with {action = "RedefinirSenha", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RedefinirSenha(System.String) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:02:03.836 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__token_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE (`u`.`TokenRecuperacao` = @__token_0) AND (`u`.`TokenExpira` > CURRENT_TIMESTAMP())
+LIMIT 1
+2026-04-15 16:02:03.837 -03:00 [INF] Executing ViewResult, running view RedefinirSenha.
+2026-04-15 16:02:03.839 -03:00 [INF] Executed ViewResult - view RedefinirSenha executed in 2.3195ms.
+2026-04-15 16:02:03.839 -03:00 [INF] Executed action StartStop.Controllers.LoginController.RedefinirSenha (StartStop) in 10.0689ms
+2026-04-15 16:02:03.839 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.RedefinirSenha (StartStop)'
+2026-04-15 16:02:03.839 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/RedefinirSenha?token=19414e21-8169-47b6-9264-b4f675f69a23 - 200 null text/html; charset=utf-8 10.8551ms
+2026-04-15 16:02:03.929 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-04-15 16:02:03.930 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\projetos\startstop\wwwroot\favicon.ico'
+2026-04-15 16:02:03.930 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 200 5430 image/x-icon 1.2622ms
+2026-04-15 16:02:10.207 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login/RedefinirSenha - application/x-www-form-urlencoded 262
+2026-04-15 16:02:10.207 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.RedefinirSenha (StartStop)'
+2026-04-15 16:02:10.214 -03:00 [INF] Route matched with {action = "RedefinirSenha", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RedefinirSenha(StartStop.ViewModels.RedefinirSenhaViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:02:10.232 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__model_Token_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE (`u`.`TokenRecuperacao` = @__model_Token_0) AND (`u`.`TokenExpira` > CURRENT_TIMESTAMP())
+LIMIT 1
+2026-04-15 16:02:10.732 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 150), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 255), @p7='?' (DbType = DateTime), @p8='?' (Size = 255), @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Usuarios` SET `Ativo` = @p0, `DataCriacao` = @p1, `Email` = @p2, `Nome` = @p3, `Observacoes` = @p4, `Perfil` = @p5, `SenhaHash` = @p6, `TokenExpira` = @p7, `TokenRecuperacao` = @p8, `UltimaAtualizacao` = @p9, `UltimoLogin` = @p10
+WHERE `Id` = @p11;
+SELECT ROW_COUNT();
+2026-04-15 16:02:10.733 -03:00 [INF] Executing RedirectResult, redirecting to /Login.
+2026-04-15 16:02:10.733 -03:00 [INF] Executed action StartStop.Controllers.LoginController.RedefinirSenha (StartStop) in 519.096ms
+2026-04-15 16:02:10.733 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.RedefinirSenha (StartStop)'
+2026-04-15 16:02:10.733 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login/RedefinirSenha - 302 0 null 526.1162ms
+2026-04-15 16:02:10.736 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 16:02:10.736 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:02:10.736 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:02:10.737 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 16:02:10.740 -03:00 [INF] Executed ViewResult - view Index executed in 3.2712ms.
+2026-04-15 16:02:10.740 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 3.5767ms
+2026-04-15 16:02:10.740 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:02:10.740 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 4.0173ms
+2026-04-15 16:02:10.765 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-04-15 16:02:10.766 -03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\projetos\startstop\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2026-04-15 16:02:10.766 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.min.js - 200 25308 text/javascript 1.1982ms
+2026-04-15 16:02:10.767 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-04-15 16:02:10.769 -03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\projetos\startstop\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js'
+2026-04-15 16:02:10.769 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5824 text/javascript 1.4202ms
+2026-04-15 16:02:10.800 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 16:02:10.800 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:02:10.800 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:02:10.801 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 16:02:10.810 -03:00 [INF] Executed ViewResult - view Index executed in 9.6243ms.
+2026-04-15 16:02:10.810 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 10.1563ms
+2026-04-15 16:02:10.810 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:02:10.811 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 10.9718ms
+2026-04-15 16:02:22.161 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login - application/x-www-form-urlencoded 220
+2026-04-15 16:02:22.161 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:02:22.165 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:02:22.173 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__model_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__model_Email_0
+LIMIT 1
+2026-04-15 16:02:22.368 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`DataFim`, `r`.`DataInicio`, `r`.`Status`, `r`.`UsuarioId`, `r`.`VeiculoId`
+FROM `Reservas` AS `r`
+WHERE (`r`.`Status` = 'Ativa') AND (`r`.`DataFim` <= CURRENT_TIMESTAMP())
+2026-04-15 16:02:22.377 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 150), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 255), @p7='?' (DbType = DateTime), @p8='?' (Size = 255), @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Usuarios` SET `Ativo` = @p0, `DataCriacao` = @p1, `Email` = @p2, `Nome` = @p3, `Observacoes` = @p4, `Perfil` = @p5, `SenhaHash` = @p6, `TokenExpira` = @p7, `TokenRecuperacao` = @p8, `UltimaAtualizacao` = @p9, `UltimoLogin` = @p10
+WHERE `Id` = @p11;
+SELECT ROW_COUNT();
+2026-04-15 16:02:22.379 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-15 16:02:22.381 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-15 16:02:22.381 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-15 16:02:22.381 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 216.3004ms
+2026-04-15 16:02:22.381 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:02:22.381 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login - 302 0 null 220.4674ms
+2026-04-15 16:02:22.384 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 16:02:22.385 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 16:02:22.386 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 16:02:22.386 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 1.2647ms
+2026-04-15 16:02:22.414 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 16:02:22.415 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 16:02:22.415 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 16:02:22.415 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 0.9282ms
+2026-04-15 16:03:47.635 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/veiculos - null null
+2026-04-15 16:03:47.640 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-15 16:03:47.643 -03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-04-15 16:03:47.644 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/veiculos - 302 0 null 10.8545ms
+2026-04-15 16:03:47.648 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2Fveiculos - null null
+2026-04-15 16:03:47.649 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:03:47.649 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:03:47.649 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 16:03:47.653 -03:00 [INF] Executed ViewResult - view Index executed in 3.3786ms.
+2026-04-15 16:03:47.653 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 4.0884ms
+2026-04-15 16:03:47.653 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:03:47.653 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login/Index?ReturnUrl=%2Fveiculos - 200 null text/html; charset=utf-8 5.0046ms
+2026-04-15 16:03:56.485 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login - application/x-www-form-urlencoded 220
+2026-04-15 16:03:56.486 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:03:56.486 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 16:03:56.489 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__model_Email_0
+LIMIT 1
+2026-04-15 16:03:56.714 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`DataFim`, `r`.`DataInicio`, `r`.`Status`, `r`.`UsuarioId`, `r`.`VeiculoId`
+FROM `Reservas` AS `r`
+WHERE (`r`.`Status` = 'Ativa') AND (`r`.`DataFim` <= CURRENT_TIMESTAMP())
+2026-04-15 16:03:56.721 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 150), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 255), @p7='?' (DbType = DateTime), @p8='?' (Size = 255), @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Usuarios` SET `Ativo` = @p0, `DataCriacao` = @p1, `Email` = @p2, `Nome` = @p3, `Observacoes` = @p4, `Perfil` = @p5, `SenhaHash` = @p6, `TokenExpira` = @p7, `TokenRecuperacao` = @p8, `UltimaAtualizacao` = @p9, `UltimoLogin` = @p10
+WHERE `Id` = @p11;
+SELECT ROW_COUNT();
+2026-04-15 16:03:56.721 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-15 16:03:56.722 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-15 16:03:56.722 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-15 16:03:56.722 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 235.9711ms
+2026-04-15 16:03:56.722 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 16:03:56.722 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login - 302 0 null 236.6516ms
+2026-04-15 16:03:56.726 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 16:03:56.726 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 16:03:56.726 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 16:03:56.726 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 0.4485ms
+2026-04-15 16:18:45.262 -03:00 [INF] Application is shutting down...
+2026-04-15 17:23:59.782 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 17:23:59.843 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 17:23:59.862 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 17:23:59.880 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-04-15 17:24:00.026 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-15 17:24:00.181 -03:00 [INF] Now listening on: http://[::]:5000
+2026-04-15 17:24:00.187 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-15 17:24:00.188 -03:00 [INF] Hosting environment: Development
+2026-04-15 17:24:00.188 -03:00 [INF] Content root path: C:\Projetos\StartStop
+2026-04-15 17:24:06.714 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 17:24:06.850 -03:00 [INF] Cookies was not authenticated. Failure message: Unprotect ticket failed
+2026-04-15 17:24:06.858 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:06.897 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 17:24:06.940 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 17:24:07.117 -03:00 [WRN] The temp data cookie .AspNetCore.Mvc.CookieTempDataProvider could not be loaded.
+System.Security.Cryptography.CryptographicException: The payload was invalid. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider.LoadTempData(HttpContext context)
+2026-04-15 17:24:07.210 -03:00 [INF] Executed ViewResult - view Index executed in 276.8771ms.
+2026-04-15 17:24:07.213 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 314.3266ms
+2026-04-15 17:24:07.213 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:07.218 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 508.4625ms
+2026-04-15 17:24:07.890 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 17:24:07.894 -03:00 [INF] Cookies was not authenticated. Failure message: Unprotect ticket failed
+2026-04-15 17:24:07.894 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:07.894 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 17:24:07.905 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 17:24:07.917 -03:00 [INF] Executed ViewResult - view Index executed in 12.7205ms.
+2026-04-15 17:24:07.918 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 23.2324ms
+2026-04-15 17:24:07.918 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:07.918 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 28.2388ms
+2026-04-15 17:24:21.167 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Login - application/x-www-form-urlencoded 220
+2026-04-15 17:24:21.173 -03:00 [INF] Cookies was not authenticated. Failure message: Unprotect ticket failed
+2026-04-15 17:24:21.173 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:21.202 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(StartStop.Models.LoginViewModel) on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 17:24:22.087 -03:00 [INF] Executed DbCommand (82ms) [Parameters=[@__model_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Ativo`, `u`.`DataCriacao`, `u`.`Email`, `u`.`Nome`, `u`.`Observacoes`, `u`.`Perfil`, `u`.`SenhaHash`, `u`.`TokenExpira`, `u`.`TokenRecuperacao`, `u`.`UltimaAtualizacao`, `u`.`UltimoLogin`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Email` = @__model_Email_0
+LIMIT 1
+2026-04-15 17:24:23.164 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`DataFim`, `r`.`DataInicio`, `r`.`Status`, `r`.`UsuarioId`, `r`.`VeiculoId`
+FROM `Reservas` AS `r`
+WHERE (`r`.`Status` = 'Ativa') AND (`r`.`DataFim` <= CURRENT_TIMESTAMP())
+2026-04-15 17:24:23.404 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (Size = 150), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 255), @p7='?' (DbType = DateTime), @p8='?' (Size = 255), @p9='?' (DbType = DateTime), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Usuarios` SET `Ativo` = @p0, `DataCriacao` = @p1, `Email` = @p2, `Nome` = @p3, `Observacoes` = @p4, `Perfil` = @p5, `SenhaHash` = @p6, `TokenExpira` = @p7, `TokenRecuperacao` = @p8, `UltimaAtualizacao` = @p9, `UltimoLogin` = @p10
+WHERE `Id` = @p11;
+SELECT ROW_COUNT();
+2026-04-15 17:24:23.425 -03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-04-15 17:24:23.431 -03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-04-15 17:24:23.437 -03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-04-15 17:24:23.439 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 2236.8271ms
+2026-04-15 17:24:23.440 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:23.448 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/Login - 302 0 null 2281.3758ms
+2026-04-15 17:24:23.449 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 17:24:23.452 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 17:24:23.454 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 17:24:23.454 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 5.3856ms
+2026-04-15 17:24:23.500 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 17:24:23.501 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 17:24:23.502 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 17:24:23.502 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 1.3916ms
+2026-04-15 17:24:26.256 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 17:24:26.257 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:26.258 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 17:24:26.270 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 17:24:26.283 -03:00 [INF] Executed ViewResult - view Index executed in 13.5131ms.
+2026-04-15 17:24:26.283 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 25.5512ms
+2026-04-15 17:24:26.283 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:26.283 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 27.1708ms
+2026-04-15 17:24:26.339 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Login - null null
+2026-04-15 17:24:26.340 -03:00 [INF] Executing endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:26.340 -03:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StartStop.Controllers.LoginController (StartStop).
+2026-04-15 17:24:26.355 -03:00 [INF] Executing ViewResult, running view Index.
+2026-04-15 17:24:26.358 -03:00 [INF] Executed ViewResult - view Index executed in 3.0873ms.
+2026-04-15 17:24:26.358 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 17.4559ms
+2026-04-15 17:24:26.358 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
+2026-04-15 17:24:26.358 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 18.7766ms
