@@ -1,211 +1,218 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
+build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnforceExtendedAnalyzerRules = 
 build_property.RootNamespace = StartStop
 build_property.RootNamespace = StartStop
-build_property.ProjectDir = C:\Projetos\StartStop\
+build_property.ProjectDir = C:\projetos\startstop\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projetos\StartStop
+build_property.MSBuildProjectDirectory = C:\projetos\startstop
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projetos/StartStop/Views/Conta/TrocarSenha.cshtml]
+[C:/projetos/startstop/Views/Conta/TrocarSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcVHJvY2FyU2VuaGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Dashboard/Index.cshtml]
+[C:/projetos/startstop/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Home/Index.cshtml]
+[C:/projetos/startstop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Home/Privacy.cshtml]
+[C:/projetos/startstop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Login/EsqueciSenha.cshtml]
+[C:/projetos/startstop/Views/Login/EsqueciSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRXNxdWVjaVNlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Login/Index.cshtml]
+[C:/projetos/startstop/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Login/RedefinirSenha.cshtml]
+[C:/projetos/startstop/Views/Login/RedefinirSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVkZWZpbmlyU2VuaGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Login/TokenExpirado.cshtml]
+[C:/projetos/startstop/Views/Login/TokenExpirado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVG9rZW5FeHBpcmFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Manutencoes/Create.cshtml]
+[C:/projetos/startstop/Views/Manutencoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Manutencoes/Edit.cshtml]
+[C:/projetos/startstop/Views/Manutencoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Manutencoes/Index.cshtml]
+[C:/projetos/startstop/Views/Manutencoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Motoristas/Create.cshtml]
+[C:/projetos/startstop/Views/Motoristas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3Rhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Motoristas/Delete.cshtml]
+[C:/projetos/startstop/Views/Motoristas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3Rhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Motoristas/Details.cshtml]
+[C:/projetos/startstop/Views/Motoristas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3Rhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Motoristas/Edit.cshtml]
+[C:/projetos/startstop/Views/Motoristas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3Rhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Motoristas/Index.cshtml]
+[C:/projetos/startstop/Views/Motoristas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3Rhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Cancelar.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Cancelar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xDYW5jZWxhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Create.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Details.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Devolucao.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Devolucao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xEZXZvbHVjYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Index.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Logs.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Logs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xMb2dzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/RelatorioCombinado.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/RelatorioCombinado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xSZWxhdG9yaW9Db21iaW5hZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/RelatorioMotorista.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/RelatorioMotorista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xSZWxhdG9yaW9Nb3RvcmlzdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/RelatorioPeriodo.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/RelatorioPeriodo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xSZWxhdG9yaW9QZXJpb2RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/RelatorioPlaca.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/RelatorioPlaca.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xSZWxhdG9yaW9QbGFjYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Movimentacoes/Retirada.cshtml]
+[C:/projetos/startstop/Views/Movimentacoes/Retirada.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xSZXRpcmFkYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/OldUsuarios/Create.cshtml]
+[C:/projetos/startstop/Views/OldUsuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/OldUsuarios/Delete.cshtml]
+[C:/projetos/startstop/Views/OldUsuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/OldUsuarios/Edit.cshtml]
+[C:/projetos/startstop/Views/OldUsuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/OldUsuarios/Index.cshtml]
+[C:/projetos/startstop/Views/OldUsuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/OldUsuarios/oldIndex.cshtml]
+[C:/projetos/startstop/Views/OldUsuarios/oldIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkVXN1YXJpb3Ncb2xkSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Reserva/Index.cshtml]
+[C:/projetos/startstop/Views/Reserva/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Shared/Error.cshtml]
+[C:/projetos/startstop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/projetos/startstop/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Usuarios/Create.cshtml]
+[C:/projetos/startstop/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Usuarios/Delete.cshtml]
+[C:/projetos/startstop/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Usuarios/Details.cshtml]
+[C:/projetos/startstop/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Usuarios/Edit.cshtml]
+[C:/projetos/startstop/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Usuarios/Index.cshtml]
+[C:/projetos/startstop/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Veiculos/Create.cshtml]
+[C:/projetos/startstop/Views/Veiculos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Veiculos/Delete.cshtml]
+[C:/projetos/startstop/Views/Veiculos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Veiculos/Details.cshtml]
+[C:/projetos/startstop/Views/Veiculos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Veiculos/Edit.cshtml]
+[C:/projetos/startstop/Views/Veiculos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Veiculos/Index.cshtml]
+[C:/projetos/startstop/Views/Veiculos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/_ViewImports.cshtml]
+[C:/projetos/startstop/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/_ViewStart.cshtml]
+[C:/projetos/startstop/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/StartStop/Views/Shared/_Layout.cshtml]
+[C:/projetos/startstop/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-iefwliixdd

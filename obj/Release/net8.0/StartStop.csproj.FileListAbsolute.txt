@@ -173,3 +173,9 @@ C:\projetos\startstop\bin\Release\net8.0\out\out\appsettings.json
 C:\projetos\startstop\bin\Release\net8.0\out\out\global.json
 C:\projetos\startstop\bin\Release\net8.0\out\out\StartStop.deps.json
 C:\projetos\startstop\bin\Release\net8.0\out\out\StartStop.runtimeconfig.json
+C:\projetos\startstop\bin\Release\net8.0\out\out\out\web.config
+C:\projetos\startstop\bin\Release\net8.0\out\out\out\appsettings.Development.json
+C:\projetos\startstop\bin\Release\net8.0\out\out\out\appsettings.json
+C:\projetos\startstop\bin\Release\net8.0\out\out\out\global.json
+C:\projetos\startstop\bin\Release\net8.0\out\out\out\StartStop.deps.json
+C:\projetos\startstop\bin\Release\net8.0\out\out\out\StartStop.runtimeconfig.json

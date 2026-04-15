@@ -730,3 +730,30 @@ SELECT ROW_COUNT();
 2026-04-15 17:24:26.358 -03:00 [INF] Executed action StartStop.Controllers.LoginController.Index (StartStop) in 17.4559ms
 2026-04-15 17:24:26.358 -03:00 [INF] Executed endpoint 'StartStop.Controllers.LoginController.Index (StartStop)'
 2026-04-15 17:24:26.358 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/Login - 200 null text/html; charset=utf-8 18.7766ms
+2026-04-15 17:35:39.012 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 17:35:39.055 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='startstop' AND TABLE_NAME='__EFMigrationsHistory';
+2026-04-15 17:35:39.079 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2026-04-15 17:35:39.097 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-04-15 17:35:39.176 -03:00 [INF] User profile is available. Using 'C:\Users\lpdia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-15 17:35:39.238 -03:00 [INF] Now listening on: http://[::]:5000
+2026-04-15 17:35:39.241 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-15 17:35:39.241 -03:00 [INF] Hosting environment: Development
+2026-04-15 17:35:39.241 -03:00 [INF] Content root path: C:\projetos\startstop
+2026-04-15 17:35:51.889 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 17:35:51.977 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 17:35:51.990 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 17:35:51.992 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 106.8876ms
+2026-04-15 17:36:10.203 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 17:36:10.207 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 17:36:10.207 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 17:36:10.207 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 4.2446ms
+2026-04-15 17:36:12.159 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-15 17:36:12.162 -03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-04-15 17:36:12.162 -03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-04-15 17:36:12.162 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 200 null text/plain; charset=utf-8 3.4446ms
+2026-04-15 17:36:41.807 -03:00 [INF] Application is shutting down...
